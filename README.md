@@ -4,7 +4,7 @@
 
 ---
 
-
+This website is dedicated to all things hedgehogs. You can browse, login/register and view the different types of hedgehogs.
 
 ===
 
@@ -12,7 +12,7 @@
 
 ---
 
-Demo: PUT_SITE_URL_HERE
+Demo: https://main--glowing-trifle-1a76a8.netlify.app/
 
 ===
 
@@ -20,9 +20,9 @@ Demo: PUT_SITE_URL_HERE
 
 ---
 
-## Started Developement - 
+## Started Developement - 3/31/2023
 
-## Ended Development -
+## Ended Development - IN PROGRESS
 
 ## Status
 
