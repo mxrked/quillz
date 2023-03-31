@@ -13,6 +13,6 @@ module.exports = {
 
   //! This added clean urls and eliminates the .html extension aswell as linking
   //! CSS and JS with the trailingSlash
-  assetPrefix: isProd ? "https://master--warm-jelly-0bb735.netlify.app/" : "",
+  assetPrefix: isProd ? "https://main--glowing-trifle-1a76a8.netlify.app/" : "",
   trailingSlash: true,
 };

@@ -1,1 +1,12 @@
-/*# sourceMappingURL=Index.module.css.map */
+@font-face {
+  font-family: "Josefin Sans Bold Italic";
+  src: url("../../../fonts/JosefinSans/JosefinSansBoldItalic.ttf");
+}
+@font-face {
+  font-family: "Lato Bold";
+  src: url("../../../fonts/Lato/LatoBold.ttf");
+}
+@font-face {
+  font-family: "Lato Regular";
+  src: url("../../../fonts/Lato/LatoRegular.ttf");
+}/*# sourceMappingURL=Index.module.css.map */
