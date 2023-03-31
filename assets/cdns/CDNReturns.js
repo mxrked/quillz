@@ -4,8 +4,7 @@
  *
  */
 
-const SERVER =
-  "https://raw.githubusercontent.com/mxrked/animex_streaming_CDN/master/";
+const SERVER = "https://raw.githubusercontent.com/mxrked/quillz_CDN/main/";
 
 function CDNBGReturn(bgSub, bgSubFile, fileExt) {
   let bgSrc;
