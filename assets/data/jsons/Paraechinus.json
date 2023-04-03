@@ -1,0 +1,32 @@
+{
+  "Paraechinus": [
+    {
+      "hName": "Desert",
+      "hType": "Paraechinus",
+      "hDesc": "The pint-sized prince of hedgehogs, Desert hedgehogs only grow up to six inches long. They can be found in the deserts of North Africa and the Middle East.",
+      "hImgUrl": "https://petkeen.com/wp-content/uploads/2020/11/Desert-Hedgehog_Chen-Ein-Dor_Wikimedia-Commons-CC-SA-4.0-International-1024x682.webp",
+      "_source": "https://petkeen.com/types-of-hedgehogs/"
+    },
+    {
+      "hName": "Brandt's",
+      "hType": "Paraechinus",
+      "hDesc": "The Brandt's hedgehog is naturally found in Pakistan, Afghanistan, and Yemen. It has very dark fur and quills, and much larger ears than most hedgehogs. When threatened, they have been known to jump at predators spikes-first!",
+      "hImgUrl": "https://petkeen.com/wp-content/uploads/2020/11/Brandts-Hedgehog_Shah-Jahan_Wikimedia-Commons-CC-SA-4.0-International-1024x683.webp",
+      "_source": "https://petkeen.com/types-of-hedgehogs/"
+    },
+    {
+      "hName": "Indian",
+      "hType": "Paraechinus",
+      "hDesc": "Though they bear a similar name to a domesticated hedgehog, this different species is found only in the wild. They live in the high mountain areas of India and Pakistan and are most distinguishable by their small size and mask-like face markings.",
+      "hImgUrl": "https://petkeen.com/wp-content/uploads/2020/11/Indian-long-eared-hedgehog_Nishant-Vaze_Shutterstock-e1620205062927.webp",
+      "_source": "https://petkeen.com/types-of-hedgehogs/"
+    },
+    {
+      "hName": "Bare-bellied",
+      "hType": "Paraechinus",
+      "hDesc": "Endemic to Southeastern India, this rare species was long thought to be extinct. Now, they can be found regularly in the Indian states of Andhra Pradesh and Tamil Nadu.",
+      "hImgUrl": "https://i.guim.co.uk/img/media/780c989d5b95758b035ba96f8233668b36ee6449/0_230_3445_2067/master/3445.jpg?width=700&quality=85&auto=format&fit=max&s=21663d756c2127b4f60f15b041333076",
+      "_source": "https://petkeen.com/types-of-hedgehogs/"
+    }
+  ]
+}

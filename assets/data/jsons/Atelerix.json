@@ -1,0 +1,32 @@
+{
+  "Atelerix": [
+    {
+      "hName": "African Pygmy",
+      "hType": "Atelerix",
+      "hDesc": "Also known as the 'four-toed hedgehog', They are one of the most popular types of domesticated hedgehogs sold as pets. Solitary, nocturnal, and energetic, they can run as much as five miles a night!",
+      "hImgUrl": "https://petkeen.com/wp-content/uploads/2020/06/African-Pygmy-Hedgehog.webp",
+      "_source": "https://petkeen.com/types-of-hedgehogs/"
+    },
+    {
+      "hName": "Algerian",
+      "hType": "Atelerix",
+      "hDesc": "The next most popular of all domesticated hedgehog breeds, a distant relative of the Algerian hedgehog was domesticated by the Romans in the fourth century to be used for meat, quills, and pets.",
+      "hImgUrl": "https://petkeen.com/wp-content/uploads/2022/01/Algerian-hedgehog_Best-dog-photo-Shutterstock.webp",
+      "_source": "https://petkeen.com/types-of-hedgehogs/"
+    },
+    {
+      "hName": "Southern African",
+      "hType": "Atelerix",
+      "hDesc": "The handsome South African hedgehog has a distinctive white stripe on its head against otherwise dark fur. They can be found in countries like Botswana, Namibia, South Africa, and Zimbabwe.",
+      "hImgUrl": "https://petkeen.com/wp-content/uploads/2020/11/Southern-African-Hedgehog-Atelerix-frontalis-6870692019_Pius-Mahimbi_Wikimedia-Commons-CC-SA-2.0-Generic-1024x683.webp",
+      "_source": "https://petkeen.com/types-of-hedgehogs/"
+    },
+    {
+      "hName": "Somali",
+      "hType": "Atelerix",
+      "hDesc": "Found only in Somalia, these small hedgehogs have a white belly with brown or black legs.",
+      "hImgUrl": "https://petkeen.com/wp-content/uploads/2020/11/somalia-hedgehog_Anastasiia-Gru_Shutterstock.jpg",
+      "_source": "https://petkeen.com/types-of-hedgehogs/"
+    }
+  ]
+}

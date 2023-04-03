@@ -1,0 +1,18 @@
+{
+  "Hemiechinus": [
+    {
+      "hName": "Egyptian Long-Eared",
+      "hType": "Hemiechinus",
+      "hDesc": "Smaller than European hedgehogs, when found in the wild this domesticated breed will often hibernate for short periods of time in summer and winter. Long-eared hedgehog breeds are naturally parasite prone, so be sure to source one from a reputable dealer if you would like to keep one as a pet.",
+      "hImgUrl": "https://petkeen.com/wp-content/uploads/2020/11/Egyptian-Long-Eared-Hedgehog_AmyAlyssa_Shutterstock.webp",
+      "_source": "https://petkeen.com/types-of-hedgehogs/"
+    },
+    {
+      "hName": "Indian Long-Eared",
+      "hType": "Hemiechinus",
+      "hDesc": "The last of four domesticated hedgehog breeds, these animals are native to India and Pakistan. This means that the Indian Long-Eared hedgehog can handle both extreme heat and extreme cold much better than most hedgehogs.",
+      "hImgUrl": "https://petkeen.com/wp-content/uploads/2020/11/Indian-long-eared-hedgehog_Nishant-Vaze_Shutterstock.jpg",
+      "_source": "https://petkeen.com/types-of-hedgehogs/"
+    }
+  ]
+}

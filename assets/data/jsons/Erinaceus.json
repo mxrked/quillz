@@ -1,0 +1,32 @@
+{
+  "Erinaceus": [
+    {
+      "hName": "Amur",
+      "hType": "Erinaceus",
+      "hDesc": "Native to Central Asia, the Amur hedgehog can grow up to a foot long. They are also found in South-Eastern Russia, Korea, and China.",
+      "hImgUrl": "https://petkeen.com/wp-content/uploads/2020/11/Amur-Hedgehog.webp",
+      "_source": "https://petkeen.com/types-of-hedgehogs/"
+    },
+    {
+      "hName": "Southern White-Breasted",
+      "hType": "Erinaceus",
+      "hDesc": "Found in Eastern Europe and Western Asia, the Southern White-Breasted hedgehog differs from the European mainly by its white belly and its habit of making a nest from grass as opposed to digging.",
+      "hImgUrl": "https://petkeen.com/wp-content/uploads/2020/11/2008-Hedgehog-1020932_Nevit-Dilmen_Wikimedia-Commons-CC-SA-3.0-Unported-1024x768.webp",
+      "_source": "https://petkeen.com/types-of-hedgehogs/"
+    },
+    {
+      "hName": "European",
+      "hType": "Erinaceus",
+      "hDesc": "Found across much of Europe, these are often called the common hedgehog. They can grow to up to a foot in length and live as long as 10 years.",
+      "hImgUrl": "https://petkeen.com/wp-content/uploads/2020/06/European-Hedgehog.webp",
+      "_source": "https://petkeen.com/types-of-hedgehogs/"
+    },
+    {
+      "hName": "Northern White-Breasted",
+      "hType": "Erinaceus",
+      "hDesc": "Easily recognizable by their white bellies, these hedgehogs were originally found in Eastern Europe, but have spread to Russia, Ukraine, and the Caucasus region.",
+      "hImgUrl": "https://petkeen.com/wp-content/uploads/2020/11/Northern-White-Breasted-Hedgehog.webp",
+      "_source": "https://petkeen.com/types-of-hedgehogs/"
+    }
+  ]
+}
