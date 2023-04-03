@@ -8,6 +8,7 @@ import { useRouter } from "next/router";
 
 // Component Imports
 import { PageHead } from "@/assets/components/global/PageHead";
+import { DesktopNav } from "@/assets/components/global/Nav/Desktop/DesktopNav";
 
 // Style Imports
 import "../assets/styles/modules/Profile/Profile.module.css";
@@ -36,6 +37,8 @@ export default function Profile() {
     <div id="page" className="page profile-page overrides_PROFILE">
       {/* Global Components */}
       <PageHead />
+
+      <DesktopNav />
 
       <main id="pageMain" className="page-main"></main>
     </div>

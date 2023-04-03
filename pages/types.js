@@ -8,6 +8,7 @@ import { useRouter } from "next/router";
 
 // Component Imports
 import { PageHead } from "@/assets/components/global/PageHead";
+import { DesktopNav } from "@/assets/components/global/Nav/Desktop/DesktopNav";
 
 // Style Imports
 import "../assets/styles/modules/Types/Types.module.css";
@@ -19,6 +20,8 @@ export default function Types() {
     <div id="page" className="page types-page overrides_types">
       {/* Global Components */}
       <PageHead />
+
+      <DesktopNav />
 
       <main id="pageMain" className="page-main"></main>
     </div>

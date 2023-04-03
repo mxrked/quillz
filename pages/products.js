@@ -8,6 +8,7 @@ import { useRouter } from "next/router";
 
 // Component Imports
 import { PageHead } from "@/assets/components/global/PageHead";
+import { DesktopNav } from "@/assets/components/global/Nav/Desktop/DesktopNav";
 
 // Style Imports
 import "../assets/styles/modules/Products/Products.module.css";
@@ -19,6 +20,8 @@ export default function Products() {
     <div id="page" className="page products-page overrides_PRODUCTS">
       {/* Global Components */}
       <PageHead />
+
+      <DesktopNav />
 
       <main id="pageMain" className="page-main"></main>
     </div>
