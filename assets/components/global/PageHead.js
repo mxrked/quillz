@@ -8,8 +8,6 @@ import { useRouter } from "next/router";
 
 import Head from "next/head";
 
-import { ATI, FAVICON, F16, F32 } from "../../cdns/CDNIcons";
-
 import {
   INDEX_KWS,
   TYPES_KWS,
@@ -121,6 +119,14 @@ export const PageHead = () => {
     kws = "No keywords";
     url = router.pathname;
   }
+  // Profile Page
+  if (router.pathname == "/profile") {
+    title = "Quillz - My Profile";
+    robots = "no index, no follow";
+    desc = "No description";
+    kws = "No keywords";
+    url = router.pathname;
+  }
 
   return (
     <Head id="pageHead">
@@ -137,10 +143,27 @@ export const PageHead = () => {
 
       <link rel="canonical" href={url} />
 
-      <link rel="shortcut icon" href={FAVICON} />
-      <link rel="apple-touch-icon" sizes="180x180" href={ATI} />
-      <link rel="icon" type="image/png" sizes="32x32" href={F32} />
-      <link rel="icon" type="image/png" sizes="16x16" href={F16} />
+      <link
+        rel="shortcut icon"
+        href="https://raw.githubusercontent.com/mxrked/quillz_CDN/master/icons/tab-icons/favicon.ico"
+      />
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="https://raw.githubusercontent.com/mxrked/quillz_CDN/master/icons/tab-icons/apple-touch-icon.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="https://raw.githubusercontent.com/mxrked/quillz_CDN/master/icons/tab-icons/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="https://raw.githubusercontent.com/mxrked/quillz_CDN/master/icons/tab-icons/favicon-16x16.png"
+      />
     </Head>
   );
 };
