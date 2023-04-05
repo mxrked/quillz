@@ -5,10 +5,13 @@ import { useRouter } from "next/router";
 // Library Imports
 
 // Data/Functions/Images Imports
+import TriggerExitAnimations from "@/assets/functions/dom/triggers/TriggerExitAnimations";
 
 // Component Imports
 import { PageHead } from "@/assets/components/global/PageHead";
 import { DesktopNav } from "@/assets/components/global/Nav/Desktop/DesktopNav";
+import { MobileNav } from "@/assets/components/global/Nav/Mobile/MobileNav";
+import { MobileNavMenu } from "@/assets/components/global/Nav/Mobile/MobileNavMenu";
 
 // Style Imports
 import "../assets/styles/modules/Info_Contact/Info_Contact.module.css";
@@ -16,12 +19,19 @@ import "../assets/styles/modules/Info_Contact/Info_Contact.module.css";
 export default function Info_Contact() {
   const router = useRouter();
 
+  // Exit animations trigger
+  useEffect(() => {
+    TriggerExitAnimations();
+  }, []);
+
   return (
     <div id="page" className="page info_contact-page overrides_INFO_CONTACT">
       {/* Global Components */}
       <PageHead />
 
       <DesktopNav />
+      <MobileNav />
+      <MobileNavMenu />
 
       <main id="pageMain" className="page-main"></main>
     </div>
