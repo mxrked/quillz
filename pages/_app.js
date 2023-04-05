@@ -1,5 +1,5 @@
 // React/Next Imports
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
 // Library Imports
@@ -28,6 +28,7 @@ import "../assets/styles/tools/library_styles/nprogress/nprogress.css";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
+  const [updateUI, setUpdateUI] = useState(0);
 
   //? GLOBALS
   //! NProgress Init
@@ -62,17 +63,28 @@ function MyApp({ Component, pageProps }) {
     }
   }, []);
 
-  //! Enable vertical scrolling
+  //! Updating UI State
   useEffect(() => {
     if (!sessionStorage.getItem("Mobile Nav Opened")) {
       if (!sessionStorage.getItem("Search Opened")) {
         if (!sessionStorage.getItem("Modal Opened")) {
-          document.body.style.overflowY = "auto";
-          document.body.style.pointerEvents = "auto";
+          setTimeout(() => {
+            if (sessionStorage.getItem("FM Loaded")) {
+              setUpdateUI(updateUI + 1);
+            }
+          }, 2500);
         }
       }
     }
   }, [router]);
+
+  //! Enabling scrolling and pointerevents when updateUI == 1
+  useEffect(() => {
+    if (updateUI == 1) {
+      document.body.style.overflowY = "auto";
+      document.body.style.pointerEvents = "auto";
+    }
+  }, [updateUI]);
 
   //! Reload Page after route change (This is mostly for the animations)
   useEffect(() => {
@@ -84,19 +96,29 @@ function MyApp({ Component, pageProps }) {
   //? DATA
   //! Session/Local Storage Clearing
   useEffect(() => {
+    RemoveStorageVariable("local", "ally-supports-cache");
+    RemoveStorageVariable("session", "Search Opened");
+    RemoveStorageVariable("session", "Mobile Nav Opened");
+    RemoveStorageVariable("session", "HREF");
+    RemoveStorageVariable("session", "FM Loaded");
+
+    // This will allow the modal to stay opened and prevents user from interacting
+    if (!window.location.hash) {
+      RemoveStorageVariable("session", "Modal Opened");
+    }
+
+    RemoveStorageVariable("session", "Page Reload");
+  }, [router]);
+
+  //! Adding value after framer motion content has loaded
+  useEffect(() => {
     setTimeout(() => {
-      RemoveStorageVariable("local", "ally-supports-cache");
-      RemoveStorageVariable("session", "Search Opened");
-      RemoveStorageVariable("session", "Mobile Nav Opened");
-      RemoveStorageVariable("session", "Country Code");
+      DeclareStorageVariable("session", "FM Loaded", true);
+    }, 2000);
 
-      // This will allow the modal to stay opened and prevents user from interacting
-      if (!window.location.hash) {
-        RemoveStorageVariable("session", "Modal Opened");
-      }
-
-      RemoveStorageVariable("session", "Page Reload");
-    }, 700);
+    window.addEventListener("beforeunload", () => {
+      RemoveStorageVariable("session", "FM Loaded");
+    });
   }, [router]);
 
   //? CHECKERS
