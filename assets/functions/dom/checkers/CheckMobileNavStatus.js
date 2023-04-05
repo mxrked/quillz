@@ -8,8 +8,10 @@ export default function CheckMobileNavMenuStatus() {
   // On Desktop
   if (sessionStorage.getItem("Desktop Device")) {
     if (!sessionStorage.getItem("Modal Opened")) {
-      document.body.style.overflowY = "auto";
-      document.body.style.pointerEvents = "auto";
+      if (sessionStorage.getItem("FM Loaded")) {
+        document.body.style.overflowY = "auto";
+        document.body.style.pointerEvents = "auto";
+      }
     }
   }
 
@@ -26,8 +28,10 @@ export default function CheckMobileNavMenuStatus() {
     // If closed
     if (!sessionStorage.getItem("Mobile Nav Opened")) {
       if (!sessionStorage.getItem("Modal Opened")) {
-        document.body.style.overflowY = "auto";
-        document.body.style.pointerEvents = "auto";
+        if (sessionStorage.getItem("FM Loaded")) {
+          document.body.style.overflowY = "auto";
+          document.body.style.pointerEvents = "auto";
+        }
       }
     }
 
