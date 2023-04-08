@@ -433,6 +433,9 @@
     right: 0;
     background-color: $BrandyRose;
     max-width: 500px;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow-y: auto;
 
     .main_top {
       height: 100px;
@@ -525,6 +528,7 @@
           width: 100%;
           height: 100%;
           opacity: 0;
+          left: 0;
           cursor: pointer;
         }
 
@@ -557,6 +561,10 @@
             text-decoration: none;
             color: $Alabaster;
             font-size: 17px;
+
+            &:hover {
+              opacity: 0.5;
+            }
           }
         }
       }
@@ -649,7 +657,8 @@
   .desktop_nav {
     display: block !important;
   }
-  .mobile_nav {
+  .mobile_nav,
+  .mobile_nav_menu {
     display: none !important;
   }
 }
@@ -700,6 +709,64 @@
                 margin-bottom: 5px;
                 margin-left: 20px;
               }
+            }
+          }
+        }
+      }
+    }
+  }
+  .mobile_nav_menu {
+    .mobile_nav_menu_main {
+      max-width: 90%;
+
+      .main_top {
+        height: 60px;
+
+        button {
+          width: 30px;
+          height: 30px;
+          border-width: 2px;
+          font-size: 16px;
+        }
+      }
+
+      .main_links {
+        .link {
+          height: 42px;
+
+          span {
+            font-size: 16px;
+          }
+
+          div {
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+
+            span {
+              font-size: 12px;
+            }
+          }
+        }
+
+        .sub_links_toggler {
+          height: 42px;
+
+          span {
+            font-size: 16px;
+          }
+        }
+
+        ul {
+          li {
+            a {
+              span {
+                font-size: 14px;
+              }
+            }
+
+            .view_all {
+              padding-bottom: 3px;
             }
           }
         }
@@ -790,6 +857,64 @@
       }
     }
   }
+  .mobile_nav_menu {
+    .mobile_nav_menu_main {
+      max-width: 90%;
+
+      .main_top {
+        height: 60px;
+
+        button {
+          width: 30px;
+          height: 30px;
+          border-width: 2px;
+          font-size: 16px;
+        }
+      }
+
+      .main_links {
+        .link {
+          height: 42px;
+
+          span {
+            font-size: 16px;
+          }
+
+          div {
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+
+            span {
+              font-size: 12px;
+            }
+          }
+        }
+
+        .sub_links_toggler {
+          height: 42px;
+
+          span {
+            font-size: 16px;
+          }
+        }
+
+        ul {
+          li {
+            a {
+              span {
+                font-size: 14px;
+              }
+            }
+
+            .view_all {
+              padding-bottom: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // Pixel 2 XL
@@ -868,6 +993,64 @@
                   }
                 }
               }
+            }
+          }
+        }
+      }
+    }
+  }
+  .mobile_nav_menu {
+    .mobile_nav_menu_main {
+      max-width: 450px;
+
+      .main_top {
+        height: 60px;
+
+        button {
+          width: 30px;
+          height: 30px;
+          border-width: 2px;
+          font-size: 16px;
+        }
+      }
+
+      .main_links {
+        .link {
+          height: 45px;
+
+          span {
+            font-size: 15px;
+          }
+
+          div {
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+
+            span {
+              font-size: 12px;
+            }
+          }
+        }
+
+        .sub_links_toggler {
+          height: 45px;
+
+          span {
+            font-size: 15px;
+          }
+        }
+
+        ul {
+          li {
+            a {
+              span {
+                font-size: 16px;
+              }
+            }
+
+            .view_all {
+              padding-bottom: 5px;
             }
           }
         }
@@ -965,6 +1148,64 @@
       }
     }
   }
+  .mobile_nav_menu {
+    .mobile_nav_menu_main {
+      max-width: 500px;
+
+      .main_top {
+        height: 80px;
+
+        button {
+          width: 30px;
+          height: 30px;
+          border-width: 2px;
+          font-size: 16px;
+        }
+      }
+
+      .main_links {
+        .link {
+          height: 53px;
+
+          span {
+            font-size: 21px;
+          }
+
+          div {
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+
+            span {
+              font-size: 12px;
+            }
+          }
+        }
+
+        .sub_links_toggler {
+          height: 53px;
+
+          span {
+            font-size: 21px;
+          }
+        }
+
+        ul {
+          li {
+            a {
+              span {
+                font-size: 18px;
+              }
+            }
+
+            .view_all {
+              padding-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
@@ -1042,6 +1283,64 @@
                   }
                 }
               }
+            }
+          }
+        }
+      }
+    }
+  }
+  .mobile_nav_menu {
+    .mobile_nav_menu_main {
+      max-width: 600px;
+
+      .main_top {
+        height: 60px;
+
+        button {
+          width: 30px;
+          height: 30px;
+          border-width: 2px;
+          font-size: 16px;
+        }
+      }
+
+      .main_links {
+        .link {
+          height: 47px;
+
+          span {
+            font-size: 17px;
+          }
+
+          div {
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+
+            span {
+              font-size: 12px;
+            }
+          }
+        }
+
+        .sub_links_toggler {
+          height: 47px;
+
+          span {
+            font-size: 17px;
+          }
+        }
+
+        ul {
+          li {
+            a {
+              span {
+                font-size: 16px;
+              }
+            }
+
+            .view_all {
+              padding-bottom: 5px;
             }
           }
         }
