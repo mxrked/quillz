@@ -20,6 +20,9 @@ export const MobileNavMenu = () => {
       <div
         className={`${styles.darken} full-second`}
         id="mobileNavMenuDarken"
+        onClick={() => {
+          CloseMobileNav();
+        }}
       />
 
       <div
@@ -90,7 +93,10 @@ export const MobileNavMenu = () => {
               </a>
             </li>
             <li className="half-second">
-              <a href="/products" className="nav-link half-second">
+              <a
+                href="/products"
+                className={`${styles.view_all} nav-link half-second`}
+              >
                 <span>View All</span>
               </a>
             </li>
@@ -153,7 +159,10 @@ export const MobileNavMenu = () => {
               </a>
             </li>
             <li className="half-second">
-              <a href="/types" className="nav-link half-second">
+              <a
+                href="/types"
+                className={`${styles.view_all} nav-link half-second`}
+              >
                 <span>View All</span>
               </a>
             </li>
