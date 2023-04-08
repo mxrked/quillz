@@ -1,5 +1,11 @@
 // This file is used to hold some arrays
 
+import {
+  INDEX_TOP_SLIDE_1,
+  INDEX_TOP_SLIDE_2,
+  INDEX_TOP_SLIDE_3,
+} from "./OBJECTS";
+
 const INDEX_KWS = [
   "index",
   "home",
@@ -75,4 +81,11 @@ const INFO_CONTACT_KWS = [
   "support",
 ];
 
+const INDEX_TOP_SLIDES = [
+  INDEX_TOP_SLIDE_1,
+  INDEX_TOP_SLIDE_2,
+  INDEX_TOP_SLIDE_3,
+];
+
 export { INDEX_KWS, INFO_CONTACT_KWS, TYPES_KWS, PRODUCTS_KWS };
+export { INDEX_TOP_SLIDES };
