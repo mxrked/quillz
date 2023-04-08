@@ -363,6 +363,7 @@
   background-color: rgba(192, 139, 117, 0.797);
   opacity: 0;
   visibility: hidden;
+  z-index: 700;
 }
 .mobile_nav_menu .mobile_nav_menu_main {
   position: fixed;
@@ -375,6 +376,7 @@
   overflow: hidden;
   white-space: nowrap;
   overflow-y: auto;
+  z-index: 701;
 }
 .mobile_nav_menu .mobile_nav_menu_main .main_top {
   height: 100px;
