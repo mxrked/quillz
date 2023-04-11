@@ -1,3 +1,20 @@
+.overrides_IndexTop .slick-dots {
+  bottom: 20px;
+  max-width: 200px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.overrides_IndexTop .slick-dots li {
+  margin: 12px;
+}
+.overrides_IndexTop .slick-dots li button::before {
+  font-size: 29px;
+  color: white;
+}
+
 @media all and (max-width: 1995px) {
   .fade-left-fix {
     transform: translateX(0) !important;
@@ -13,6 +30,22 @@
   .fade-right-fix {
     transform: translateX(0) !important;
   }
+  .overrides_IndexTop .slick-dots {
+    bottom: 5px;
+    max-width: 200px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .overrides_IndexTop .slick-dots li {
+    margin: 6px;
+  }
+  .overrides_IndexTop .slick-dots li button::before {
+    font-size: 22px;
+    color: white;
+  }
 }
 @media all and (max-width: 768px) {
   .fade-up-fix {
@@ -26,6 +59,22 @@
   }
   .fade-right-fix {
     transform: translateX(0) !important;
+  }
+  .overrides_IndexTop .slick-dots {
+    bottom: 5px;
+    max-width: 200px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .overrides_IndexTop .slick-dots li {
+    margin: 6px;
+  }
+  .overrides_IndexTop .slick-dots li button::before {
+    font-size: 19px;
+    color: white;
   }
 }
 @media all and (max-width: 419px) {
@@ -69,6 +118,22 @@
   .fade-right-fix {
     transform: translateX(0) !important;
   }
+  .overrides_IndexTop .slick-dots {
+    bottom: 10px;
+    max-width: 200px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .overrides_IndexTop .slick-dots li {
+    margin: 6px;
+  }
+  .overrides_IndexTop .slick-dots li button::before {
+    font-size: 22px;
+    color: white;
+  }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
   .fade-up-fix {
@@ -110,5 +175,39 @@
   }
   .fade-right-fix {
     transform: translateX(0) !important;
+  }
+  .overrides_IndexTop .slick-dots {
+    bottom: 10px;
+    max-width: 200px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .overrides_IndexTop .slick-dots li {
+    margin: 8px;
+  }
+  .overrides_IndexTop .slick-dots li button::before {
+    font-size: 25px;
+    color: white;
+  }
+}
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .overrides_IndexTop .slick-dots {
+    bottom: 10px;
+    max-width: 200px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .overrides_IndexTop .slick-dots li {
+    margin: 10px;
+  }
+  .overrides_IndexTop .slick-dots li button::before {
+    font-size: 25px;
+    color: white;
   }
 }/*# sourceMappingURL=overrides.css.map */
