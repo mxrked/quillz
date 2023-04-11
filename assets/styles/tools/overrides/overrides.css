@@ -11,6 +11,7 @@
   margin: 12px;
 }
 .overrides_IndexTop .slick-dots li button::before {
+  transition: 0.5s ease-in-out;
   font-size: 29px;
   color: white;
 }

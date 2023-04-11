@@ -32,8 +32,8 @@
 
       &:hover {
         .bg {
-          filter: grayscale(70%);
-          scale: 1.02;
+          filter: grayscale(70%) !important;
+          scale: 1.02 !important;
         }
       }
 
@@ -96,6 +96,13 @@
     }
 
     .slide_1 {
+      &:hover {
+        .bg {
+          filter: grayscale(70%) !important;
+          scale: 1.02 !important;
+        }
+      }
+
       .bg {
         background-position: center bottom !important;
       }
@@ -107,8 +114,84 @@
 
     .slide_3,
     .slide_2 {
+      &:hover {
+        .bg {
+          filter: grayscale(70%) !important;
+          scale: 1.02 !important;
+        }
+      }
+
       .bg {
         background-position: center center !important;
+      }
+    }
+  }
+}
+.index_products {
+  overflow: hidden;
+  margin-top: 120px;
+  margin-bottom: 120px;
+
+  .index_products_inner {
+    max-width: 1200px;
+    @include quickCenter("relative");
+
+    .index_products_inner_bg_holder {
+      height: 600px;
+      width: 100%;
+
+      .bg {
+        @include bGSU(cover, center);
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .index_products_inner_main {
+      max-width: 1000px;
+      background-color: $Alabaster;
+      position: relative;
+      top: -40px;
+      @include quickCenter("relative");
+      @include padding(80px, 80px, 10px, 10px);
+      text-align: center;
+
+      .index_products_inner_main_cnt {
+        h1 {
+          color: $BrandyRose;
+          font-family: "Lato Bold";
+          font-size: $SubHeading;
+        }
+
+        p {
+          font-size: $Text;
+          color: $EbonyClay;
+          font-family: "Lato Regular";
+          @include padding(30px, 40px, 0, 0);
+          line-height: 30px;
+          max-width: 650px;
+          @include quickCenter("relative");
+        }
+
+        a {
+          @include displayElement(inline-flex, center, center);
+          background-color: $Porsche;
+          height: 50px;
+          width: 180px;
+          @include padding(22px, 20px, 10px, 10px);
+          font-size: $Link;
+          text-decoration: none;
+
+          &:hover {
+            background-color: $Vanilla;
+          }
+
+          span {
+            text-transform: uppercase;
+            color: $Alabaster;
+            font-family: "Lato Regular";
+          }
+        }
       }
     }
   }
@@ -146,6 +229,39 @@
       }
     }
   }
+  .index_products {
+    margin-top: 40px;
+    margin-bottom: 0;
+
+    .index_products_inner {
+      max-width: 900px;
+
+      .index_products_inner_bg_holder {
+        height: 450px;
+
+        .bg {
+          height: 450px;
+        }
+      }
+
+      .index_products_inner_main {
+        .index_products_inner_main_cnt {
+          h1 {
+            font-size: 35px;
+          }
+
+          p {
+            font-size: 17px;
+          }
+
+          a {
+            font-size: 16px;
+            width: 160px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media all and (max-width: 991px) {
@@ -175,6 +291,43 @@
               width: 100px;
               height: 40px;
             }
+          }
+        }
+      }
+    }
+  }
+  .index_products {
+    margin-top: 40px;
+    margin-bottom: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    .index_products_inner {
+      max-width: 800px;
+
+      .index_products_inner_bg_holder {
+        height: 350px;
+
+        .bg {
+          height: 350px;
+          background-position: center bottom;
+        }
+      }
+
+      .index_products_inner_main {
+        .index_products_inner_main_cnt {
+          h1 {
+            font-size: 29px;
+          }
+
+          p {
+            font-size: 16px;
+            max-width: 600px;
+          }
+
+          a {
+            font-size: 15px;
+            width: 150px;
           }
         }
       }
@@ -223,6 +376,49 @@
       }
     }
   }
+  .index_products {
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    .index_products_inner {
+      max-width: 600px;
+
+      .index_products_inner_bg_holder {
+        height: 240px;
+
+        .bg {
+          height: 240px;
+          background-position: center bottom;
+        }
+      }
+
+      .index_products_inner_main {
+        padding-top: 60px;
+        padding-bottom: 30px;
+
+        .index_products_inner_main_cnt {
+          h1 {
+            font-size: 25px;
+            max-width: 300px;
+            @include quickCenter("relative");
+          }
+
+          p {
+            font-size: 16px;
+            max-width: 550px;
+          }
+
+          a {
+            font-size: 14px;
+            height: 40px;
+            width: 140px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Smaller Devices (Phones)
@@ -266,6 +462,51 @@
       }
     }
   }
+  .index_products {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .index_products_inner {
+      max-width: 600px;
+
+      .index_products_inner_bg_holder {
+        height: 180px;
+
+        .bg {
+          height: 180px;
+          background-position: 0 -50px;
+        }
+      }
+
+      .index_products_inner_main {
+        padding-top: 40px;
+        padding-bottom: 0px;
+
+        .index_products_inner_main_cnt {
+          h1 {
+            font-size: 23px;
+            max-width: 230px;
+            @include quickCenter("relative");
+          }
+
+          p {
+            font-size: 15px;
+            max-width: 300px;
+            line-height: 23px;
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+
+          a {
+            font-size: 13px;
+            width: 140px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Pixel 2 XL
@@ -280,7 +521,7 @@
         }
 
         .index_top_slider_slide_cnt {
-          padding-top: 30px;
+          padding-top: 10px;
 
           .index_top_slider_slide_cnt_inner {
             max-width: 400px;
@@ -306,6 +547,51 @@
               padding: 0;
               padding-top: 1px;
             }
+          }
+        }
+      }
+    }
+  }
+  .index_products {
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .index_products_inner {
+      max-width: 800px;
+
+      .index_products_inner_bg_holder {
+        height: 180px;
+        max-width: 400px;
+        @include quickCenter("relative");
+
+        .bg {
+          height: 180px;
+          background-position: 0 -80px;
+        }
+      }
+
+      .index_products_inner_main {
+        padding-top: 40px;
+        padding-bottom: 0px;
+
+        .index_products_inner_main_cnt {
+          h1 {
+            font-size: 23px;
+            max-width: 230px;
+            @include quickCenter("relative");
+          }
+
+          p {
+            font-size: 15px;
+            max-width: 410px;
+            line-height: 23px;
+          }
+
+          a {
+            font-size: 13px;
+            width: 140px;
           }
         }
       }
@@ -354,6 +640,51 @@
       }
     }
   }
+  .index_products {
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .index_products_inner {
+      max-width: 850px;
+
+      .index_products_inner_bg_holder {
+        height: 210px;
+        max-width: 500px;
+        @include quickCenter("relative");
+
+        .bg {
+          height: 210px;
+          background-position: 0 -100px;
+        }
+      }
+
+      .index_products_inner_main {
+        padding-top: 40px;
+        padding-bottom: 0px;
+
+        .index_products_inner_main_cnt {
+          h1 {
+            font-size: 23px;
+            max-width: 450px;
+            @include quickCenter("relative");
+          }
+
+          p {
+            font-size: 15px;
+            max-width: 500px;
+            line-height: 23px;
+          }
+
+          a {
+            font-size: 13px;
+            width: 140px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
@@ -367,7 +698,7 @@
         }
 
         .index_top_slider_slide_cnt {
-          padding-top: 20px;
+          padding-top: 0px;
 
           .index_top_slider_slide_cnt_inner {
             max-width: 550px;
@@ -393,6 +724,51 @@
               padding: 0;
               padding-top: 1px;
             }
+          }
+        }
+      }
+    }
+  }
+  .index_products {
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .index_products_inner {
+      max-width: 850px;
+
+      .index_products_inner_bg_holder {
+        height: 210px;
+        max-width: 500px;
+        @include quickCenter("relative");
+
+        .bg {
+          height: 210px;
+          background-position: 0 -100px;
+        }
+      }
+
+      .index_products_inner_main {
+        padding-top: 40px;
+        padding-bottom: 0px;
+
+        .index_products_inner_main_cnt {
+          h1 {
+            font-size: 23px;
+            max-width: 450px;
+            @include quickCenter("relative");
+          }
+
+          p {
+            font-size: 15px;
+            max-width: 500px;
+            line-height: 23px;
+          }
+
+          a {
+            font-size: 13px;
+            width: 140px;
           }
         }
       }
@@ -441,6 +817,52 @@
       }
     }
   }
+  .index_products {
+    margin-top: 70px;
+    margin-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .index_products_inner {
+      max-width: 850px;
+
+      .index_products_inner_bg_holder {
+        height: 300px;
+        max-width: 670px;
+        @include quickCenter("relative");
+
+        .bg {
+          height: 300px;
+          background-position: 0 -100px;
+        }
+      }
+
+      .index_products_inner_main {
+        padding-top: 40px;
+        padding-bottom: 0px;
+
+        .index_products_inner_main_cnt {
+          h1 {
+            font-size: 28px;
+            max-width: 550px;
+            @include quickCenter("relative");
+          }
+
+          p {
+            font-size: 16px;
+            max-width: 500px;
+            line-height: 23px;
+          }
+
+          a {
+            font-size: 13px;
+            height: 40px;
+            width: 140px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
@@ -478,6 +900,52 @@
               width: 100px;
               height: 40px;
             }
+          }
+        }
+      }
+    }
+  }
+  .index_products {
+    margin-top: 70px;
+    margin-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .index_products_inner {
+      max-width: 850px;
+
+      .index_products_inner_bg_holder {
+        height: 300px;
+        max-width: 670px;
+        @include quickCenter("relative");
+
+        .bg {
+          height: 300px;
+          background-position: 0 -100px;
+        }
+      }
+
+      .index_products_inner_main {
+        padding-top: 40px;
+        padding-bottom: 0px;
+
+        .index_products_inner_main_cnt {
+          h1 {
+            font-size: 28px;
+            max-width: 550px;
+            @include quickCenter("relative");
+          }
+
+          p {
+            font-size: 16px;
+            max-width: 500px;
+            line-height: 23px;
+          }
+
+          a {
+            font-size: 13px;
+            height: 40px;
+            width: 140px;
           }
         }
       }
@@ -521,6 +989,52 @@
               width: 100px;
               height: 40px;
             }
+          }
+        }
+      }
+    }
+  }
+  .index_products {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .index_products_inner {
+      max-width: 850px;
+
+      .index_products_inner_bg_holder {
+        height: 350px;
+        max-width: 670px;
+        @include quickCenter("relative");
+
+        .bg {
+          height: 350px;
+          background-position: 0 -100px;
+        }
+      }
+
+      .index_products_inner_main {
+        padding-top: 70px;
+        padding-bottom: 0px;
+
+        .index_products_inner_main_cnt {
+          h1 {
+            font-size: 30px;
+            max-width: 550px;
+            @include quickCenter("relative");
+          }
+
+          p {
+            font-size: 16.3px;
+            max-width: 500px;
+            line-height: 23px;
+          }
+
+          a {
+            font-size: 13px;
+            height: 40px;
+            width: 140px;
           }
         }
       }
