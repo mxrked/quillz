@@ -35,7 +35,7 @@ export const IndexTop = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    fade: true,
+    // fade: true,
     autoplay: true,
     autoplaySpeed: 15000,
   };
