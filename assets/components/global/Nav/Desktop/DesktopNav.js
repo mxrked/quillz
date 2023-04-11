@@ -14,7 +14,7 @@ import { useInView } from "react-intersection-observer";
 
 import TriggerInViewMotion from "@/assets/functions/dom/triggers/TriggerInViewMotion";
 
-import { FADE_IN } from "@/assets/anims/FADE_IN";
+import { FADE_IN } from "@/assets/anims/FADES";
 
 import styles from "../../../../styles/modules/Nav/Nav.module.css";
 
