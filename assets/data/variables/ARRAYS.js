@@ -5,6 +5,7 @@ import {
   INDEX_TOP_SLIDE_2,
   INDEX_TOP_SLIDE_3,
 } from "./OBJECTS";
+import { FADE_IN, FADE_LEFT, FADE_RIGHT } from "@/assets/anims/FADES";
 
 const INDEX_KWS = [
   "index",
@@ -81,6 +82,8 @@ const INFO_CONTACT_KWS = [
   "support",
 ];
 
+const FADES = [FADE_IN, FADE_LEFT, FADE_RIGHT];
+
 const INDEX_TOP_SLIDES = [
   INDEX_TOP_SLIDE_1,
   INDEX_TOP_SLIDE_2,
@@ -88,4 +91,5 @@ const INDEX_TOP_SLIDES = [
 ];
 
 export { INDEX_KWS, INFO_CONTACT_KWS, TYPES_KWS, PRODUCTS_KWS };
+export { FADES };
 export { INDEX_TOP_SLIDES };
