@@ -13,6 +13,7 @@ import { DesktopNav } from "@/assets/components/global/Nav/Desktop/DesktopNav";
 import { MobileNav } from "@/assets/components/global/Nav/Mobile/MobileNav";
 import { MobileNavMenu } from "@/assets/components/global/Nav/Mobile/MobileNavMenu";
 import { IndexTop } from "@/assets/components/pages/Index/IndexTop";
+import { IndexProducts } from "@/assets/components/pages/Index/IndexProducts";
 
 // Style Imports
 import "../assets/styles/modules/Index/Index.module.css";
@@ -35,6 +36,7 @@ export default function Home() {
 
       <main id="pageMain" className="page-main">
         <IndexTop />
+        <IndexProducts />
       </main>
     </div>
   );
