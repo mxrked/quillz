@@ -53,6 +53,7 @@
   color: #f9f9f9;
   font-family: "Lato Bold";
   font-size: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+  cursor: default;
 }
 .index_top .index_top_slider .index_top_slider_slide .index_top_slider_slide_cnt .index_top_slider_slide_cnt_inner p {
   font-size: clamp(1.12rem, 1vw + 1.11rem, 1.16rem);
@@ -63,6 +64,7 @@
   padding-left: 0;
   padding-right: 0;
   line-height: 30px;
+  cursor: default;
 }
 .index_top .index_top_slider .index_top_slider_slide .index_top_slider_slide_cnt .index_top_slider_slide_cnt_inner a {
   display: inline-flex;
@@ -144,6 +146,7 @@
   color: #b68973;
   font-family: "Lato Bold";
   font-size: clamp(1.55rem, 1.46vw + 1.46rem, 2.21rem);
+  cursor: default;
 }
 .index_products .index_products_inner .index_products_inner_main .index_products_inner_main_cnt p {
   font-size: clamp(1.12rem, 1vw + 1.11rem, 1.16rem);
@@ -157,6 +160,7 @@
   max-width: 650px;
   margin-left: auto;
   margin-right: auto;
+  cursor: default;
 }
 .index_products .index_products_inner .index_products_inner_main .index_products_inner_main_cnt a {
   display: inline-flex;

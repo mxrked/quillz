@@ -62,6 +62,7 @@
             color: $Alabaster;
             font-family: "Lato Bold";
             font-size: $MajorHeading;
+            cursor: default;
           }
 
           p {
@@ -70,6 +71,7 @@
             font-family: "Lato Regular";
             @include padding(30px, 40px, 0, 0);
             line-height: 30px;
+            cursor: default;
           }
 
           a {
@@ -161,6 +163,7 @@
           color: $BrandyRose;
           font-family: "Lato Bold";
           font-size: $SubHeading;
+          cursor: default;
         }
 
         p {
@@ -171,6 +174,7 @@
           line-height: 30px;
           max-width: 650px;
           @include quickCenter("relative");
+          cursor: default;
         }
 
         a {
