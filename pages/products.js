@@ -12,6 +12,7 @@ import { PageHead } from "@/assets/components/global/PageHead";
 import { DesktopNav } from "@/assets/components/global/Nav/Desktop/DesktopNav";
 import { MobileNav } from "@/assets/components/global/Nav/Mobile/MobileNav";
 import { MobileNavMenu } from "@/assets/components/global/Nav/Mobile/MobileNavMenu";
+import { Search } from "@/assets/components/global/Nav/Both/Search";
 
 // Style Imports
 import "../assets/styles/modules/Products/Products.module.css";
@@ -32,6 +33,7 @@ export default function Products() {
       <DesktopNav />
       <MobileNav />
       <MobileNavMenu />
+      <Search />
 
       <main id="pageMain" className="page-main"></main>
     </div>
