@@ -14,6 +14,7 @@ import { useInView } from "react-intersection-observer";
 
 import TriggerInViewMotion from "@/assets/functions/dom/triggers/TriggerInViewMotion";
 import DeclareStorageVariable from "@/assets/functions/data/storage/DeclareStorageVariable";
+import ToggleSearch from "@/assets/functions/dom/togglers/ToggleSearch";
 
 import { FADE_IN } from "@/assets/anims/FADES";
 
@@ -93,6 +94,9 @@ export const MobileNav = () => {
                       <button
                         id="searchToggler"
                         className={`${styles.search_toggler} search-toggler half-second`}
+                        onClick={() => {
+                          ToggleSearch();
+                        }}
                       >
                         <FaSearch className={`${styles.icon}`} />
                       </button>
