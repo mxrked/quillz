@@ -6,6 +6,7 @@
 
 import DeclareStorageVariable from "../../data/storage/DeclareStorageVariable";
 import CloseMobileNav from "../closers/CloseMobileNav";
+import CloseSearch from "../closers/CloseSearch";
 
 export default function TriggerExitAnimations() {
   document.querySelectorAll("a").forEach((link) => {
@@ -47,8 +48,9 @@ export default function TriggerExitAnimations() {
         // Storing href
         DeclareStorageVariable("session", "HREF", link.href);
 
-        // Closing the mobile nav
+        // Closing the mobile nav and search
         CloseMobileNav();
+        CloseSearch();
 
         // Disabling pointer events and scrolling
         setTimeout(() => {
