@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 // Library Imports
 
 // Data/Functions/Images Imports
-import TriggerExitAnimations from "@/assets/functions/dom/triggers/TriggerExitAnimations";
+import { TriggerExitAnimations } from "@/assets/functions/dom/triggers/TriggerExitAnimations";
 
 // Component Imports
 import { PageHead } from "@/assets/components/global/PageHead";
