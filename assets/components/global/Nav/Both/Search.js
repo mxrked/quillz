@@ -54,67 +54,97 @@ export const Search = () => {
 
         <ul id="searchLinks" className={`${styles.search_links}`}>
           <li className="search-link-li">
-            <a href="/" className={`half-second search-link`}>
+            <a href="/" className={`half-second index-link search-link`}>
               <span>Home/Index</span>
             </a>
           </li>
           <li className="search-link-li">
-            <a href="/products" className={`half-second search-link`}>
+            <a
+              href="/products"
+              className={`half-second products-link search-link`}
+            >
               <span>All Products</span>
             </a>
           </li>
           <li className="search-link-li">
-            <a href="/products#food" className={`half-second search-link`}>
+            <a
+              href="/products#food"
+              className={`half-second products-link search-link`}
+            >
               <span>Food</span>
             </a>
           </li>
           <li className="search-link-li">
-            <a href="/products#toys" className={`half-second search-link`}>
+            <a
+              href="/products#toys"
+              className={`half-second products-link search-link`}
+            >
               <span>Toys</span>
             </a>
           </li>
           <li className="search-link-li">
-            <a href="/products#housing" className={`half-second search-link`}>
+            <a
+              href="/products#housing"
+              className={`half-second products-link search-link`}
+            >
               <span>Housing</span>
             </a>
           </li>
           <li className="search-link-li">
-            <a href="/types" className={`half-second search-link`}>
+            <a href="/types" className={`half-second types-link search-link`}>
               <span>All Types</span>
             </a>
           </li>
           <li className="search-link-li">
-            <a href="/types#atelerix" className={`half-second search-link`}>
+            <a
+              href="/types#atelerix"
+              className={`half-second types-link search-link`}
+            >
               <span>Atelerix</span>
             </a>
           </li>
           <li className="search-link-li">
-            <a href="/types#erinaceus" className={`half-second search-link`}>
+            <a
+              href="/types#erinaceus"
+              className={`half-second types-link search-link`}
+            >
               <span>Erinaceus</span>
             </a>
           </li>
           <li className="search-link-li">
-            <a href="/types#hemiechinus" className={`half-second search-link`}>
+            <a
+              href="/types#hemiechinus"
+              className={`half-second types-link search-link`}
+            >
               <span>Hemiechinus</span>
             </a>
           </li>
           <li className="search-link-li">
-            <a href="/types#mesechinus" className={`half-second search-link`}>
+            <a
+              href="/types#mesechinus"
+              className={`half-second types-link search-link`}
+            >
               <span>Mesechinus</span>
             </a>
           </li>
           <li className="search-link-li">
-            <a href="/types#paraechinus" className={`half-second search-link`}>
+            <a
+              href="/types#paraechinus"
+              className={`half-second types-link search-link`}
+            >
               <span>Paraechinus</span>
             </a>
           </li>
           <li className="search-link-li">
-            <a href="/info_contact" className={`half-second search-link`}>
+            <a
+              href="/info_contact"
+              className={`half-second info-contact-link search-link`}
+            >
               <span>Info/Contact</span>
             </a>
           </li>
           <li className="search-link-li">
-            <a href="/cart" className={`half-second search-link`}>
+            <a href="/cart" className={`half-second cart-link search-link`}>
               <span>My Cart</span>
             </a>
           </li>
