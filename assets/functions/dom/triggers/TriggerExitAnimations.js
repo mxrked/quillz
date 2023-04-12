@@ -8,7 +8,7 @@ import DeclareStorageVariable from "../../data/storage/DeclareStorageVariable";
 import CloseMobileNav from "../closers/CloseMobileNav";
 import CloseSearch from "../closers/CloseSearch";
 
-export default function TriggerExitAnimations() {
+function TriggerExitAnimations() {
   document.querySelectorAll("a").forEach((link) => {
     //! Regular Links
     if (
@@ -73,3 +73,16 @@ export default function TriggerExitAnimations() {
     }
   });
 }
+
+function TriggerExitAnimations_NON_LINKS() {
+  // Disabling pointer events and scrolling
+  document.body.style.overflowY = "hidden";
+  document.body.style.pointerEvents = "none";
+
+  // Hiding elements
+  document.querySelectorAll(".fm-motion").forEach((fm) => {
+    fm.style.opacity = 0;
+  });
+}
+
+export { TriggerExitAnimations, TriggerExitAnimations_NON_LINKS };
