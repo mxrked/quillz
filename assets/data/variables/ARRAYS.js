@@ -71,12 +71,6 @@ const PRODUCTS_KWS = [
   "store",
   "store page",
   "hedgehog products",
-  "food",
-  "toys",
-  "housing",
-  "hedgehog food",
-  "hedgehog toys",
-  "hedgehog housing",
 ];
 const TOYS_KWS = ["toys", "hedgehog toys"];
 const FOOD_KWS = ["food", "hedgehog food"];
