@@ -81,6 +81,7 @@ const INFO_CONTACT_KWS = [
   "reach out",
   "support",
 ];
+const CART_KWS = ["cart", "my cart", "cart page", "view cart", "checkout"];
 
 const FADES = [FADE_IN, FADE_LEFT, FADE_RIGHT];
 
@@ -90,6 +91,6 @@ const INDEX_TOP_SLIDES = [
   INDEX_TOP_SLIDE_3,
 ];
 
-export { INDEX_KWS, INFO_CONTACT_KWS, TYPES_KWS, PRODUCTS_KWS };
+export { INDEX_KWS, INFO_CONTACT_KWS, TYPES_KWS, PRODUCTS_KWS, CART_KWS };
 export { FADES };
 export { INDEX_TOP_SLIDES };
