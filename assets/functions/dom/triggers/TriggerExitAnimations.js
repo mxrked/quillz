@@ -10,7 +10,10 @@ import CloseMobileNav from "../closers/CloseMobileNav";
 export default function TriggerExitAnimations() {
   document.querySelectorAll("a").forEach((link) => {
     //! Regular Links
-    if (!link.classList.contains("nav-link")) {
+    if (
+      !link.classList.contains("nav-link") &&
+      !link.classList.contains("search-link")
+    ) {
       link.addEventListener("click", (e) => {
         e.preventDefault();
 
@@ -34,7 +37,10 @@ export default function TriggerExitAnimations() {
     }
 
     //! Mobile Nav Links
-    if (link.classList.contains("nav-link")) {
+    if (
+      link.classList.contains("nav-link") ||
+      link.classList.contains("search-link")
+    ) {
       link.addEventListener("click", (e) => {
         e.preventDefault();
 
