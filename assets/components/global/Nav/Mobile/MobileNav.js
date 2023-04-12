@@ -46,7 +46,10 @@ export const MobileNav = () => {
                 className={`${styles.mobile_nav_inner_side} ${styles.mobile_nav_L} col-lg-6 col-md-6 col-sm-6 col-xs-6`}
               >
                 <div className={`${styles.mobile_nav_inner_side_cnt}`}>
-                  <a href="/" className={`${styles.logo} half-second`}>
+                  <a
+                    href="/"
+                    className={`${styles.logo} index-link half-second`}
+                  >
                     <div>
                       <span className={`${styles.top_text} half-second`}>
                         Quillz
@@ -83,7 +86,7 @@ export const MobileNav = () => {
 
                     <div className={`${styles.bottom}`}>
                       <div className={`${styles.cart_link}`}>
-                        <a href="/cart" className="half-second">
+                        <a href="/cart" className="cart-link half-second">
                           <FaShoppingCart className={`${styles.icon}`} />
 
                           <div>

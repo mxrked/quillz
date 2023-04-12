@@ -71,6 +71,7 @@ export const DesktopNav = () => {
                       </ul>
 
                       <input
+                        className="products-link"
                         type="checkbox"
                         id="desktopNavProductsCB"
                         onChange={(e) => {
@@ -143,6 +144,7 @@ export const DesktopNav = () => {
                       </ul>
 
                       <input
+                        className="types-link"
                         type="checkbox"
                         id="desktopNavTypesCB"
                         onChange={(e) => {
@@ -180,7 +182,10 @@ export const DesktopNav = () => {
                       <FaCaretDown className={`${styles.icon}`} />
                     </li>
                     <li>
-                      <a href="/info_contact" className="half-second">
+                      <a
+                        href="/info_contact"
+                        className="info-contact-link half-second"
+                      >
                         <span className="half-second">Info/Contact</span>
                       </a>
                     </li>
@@ -191,7 +196,10 @@ export const DesktopNav = () => {
                 className={`${styles.desktop_nav_inner_side} ${styles.desktop_nav_M} col-lg-4 col-md-4 col-sm-4 col-xs-4`}
               >
                 <div className={`${styles.desktop_nav_inner_side_cnt}`}>
-                  <a href="/" className={`${styles.logo} half-second`}>
+                  <a
+                    href="/"
+                    className={`${styles.logo} index-link half-second`}
+                  >
                     <div>
                       <span className={`${styles.top_text} half-second`}>
                         Quillz
@@ -222,7 +230,7 @@ export const DesktopNav = () => {
                       </a>
                     </li>
                     <li className={`${styles.cart_link}`}>
-                      <a href="/cart" className="half-second">
+                      <a href="/cart" className="cart-link half-second">
                         <FaShoppingCart className={`${styles.icon}`} />
 
                         <div>

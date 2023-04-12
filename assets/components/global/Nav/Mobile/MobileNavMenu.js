@@ -42,11 +42,16 @@ export const MobileNavMenu = () => {
         </div>
 
         <div className={`${styles.main_links} mobile-nav-menu-cnt half-second`}>
-          <a href="/" className={`${styles.link} nav-link half-second`}>
+          <a
+            href="/"
+            className={`${styles.link} index-link nav-link half-second`}
+          >
             <span className="half-second">Home</span>
           </a>
 
-          <div className={`${styles.sub_links_toggler} half-second`}>
+          <div
+            className={`${styles.sub_links_toggler} products-link half-second`}
+          >
             <input
               type="checkbox"
               id="mobileNavMenuProductsCB"
@@ -102,7 +107,7 @@ export const MobileNavMenu = () => {
             </li>
           </ul>
 
-          <div className={`${styles.sub_links_toggler} half-second`}>
+          <div className={`${styles.sub_links_toggler} types-link half-second`}>
             <input
               type="checkbox"
               id="mobileNavMenuTypesCB"
@@ -170,7 +175,7 @@ export const MobileNavMenu = () => {
 
           <a
             href="/info_contact"
-            className={`${styles.link} nav-link half-second`}
+            className={`${styles.link} info-contact-link nav-link half-second`}
           >
             <span className="half-second">Info/Contact</span>
           </a>
@@ -186,7 +191,10 @@ export const MobileNavMenu = () => {
           >
             <span className="half-second">My Profile</span>
           </a>
-          <a href="/cart" className={`${styles.link} nav-link half-second`}>
+          <a
+            href="/cart"
+            className={`${styles.link} cart-link nav-link half-second`}
+          >
             <span className="half-second">My Cart</span>
 
             <div>
