@@ -2,6 +2,15 @@
 
 import Hedgehog from "../classes/Hedgehog";
 import IndexTopSlide from "../classes/IndexTopSlide";
+import TypeCategory from "../classes/TypeCategory";
+
+import {
+  ATELERIX,
+  ERINACEUS,
+  HEMIECHINUS,
+  MESECHINUS,
+  PARAECHINUS,
+} from "../../cdns/CDNBgs";
 
 const INDEX_TOP_SLIDE_1 = new IndexTopSlide(
   "SLIDE_1",
@@ -25,5 +34,42 @@ const INDEX_TOP_SLIDE_3 = new IndexTopSlide(
   "/types"
 );
 
+const TYPE_ATELERIX = new TypeCategory(
+  "CAT_ATELERIX",
+  "Atelerix",
+  ATELERIX,
+  "/types#atelerix"
+);
+const TYPE_ERINACEUS = new TypeCategory(
+  "CAT_ERINACEUS",
+  "Erinaceus",
+  ERINACEUS,
+  "/types#erinaceus"
+);
+const TYPE_HEMIECHINUS = new TypeCategory(
+  "CAT_HEMIECHINUS",
+  "Hemiechinus",
+  HEMIECHINUS,
+  "/types#hemiechinus"
+);
+const TYPE_MESECHINUS = new TypeCategory(
+  "CAT_MESECHINUS",
+  "Mesechinus",
+  MESECHINUS,
+  "/types#mesechinus"
+);
+const TYPE_PARAECHINUS = new TypeCategory(
+  "CAT_PARAECHINUS",
+  "Paraechinus",
+  PARAECHINUS,
+  "/types#paraechinus"
+);
+
 export { INDEX_TOP_SLIDE_1, INDEX_TOP_SLIDE_2, INDEX_TOP_SLIDE_3 };
-export {};
+export {
+  TYPE_ATELERIX,
+  TYPE_ERINACEUS,
+  TYPE_HEMIECHINUS,
+  TYPE_MESECHINUS,
+  TYPE_PARAECHINUS,
+};
