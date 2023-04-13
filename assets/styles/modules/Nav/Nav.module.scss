@@ -769,6 +769,44 @@
   .mobile_nav {
     display: block;
   }
+  .search {
+    .search_inner {
+      max-width: 700px;
+
+      .search_inner_top {
+        h1 {
+          font-size: 36px;
+        }
+
+        button {
+          font-size: 18px;
+          width: 36px;
+          height: 36px;
+        }
+      }
+
+      .search_inner_input_holder {
+        height: 40px;
+
+        input {
+          font-size: 18px;
+        }
+
+        button {
+          font-size: 18px;
+        }
+      }
+
+      ul {
+        li {
+          a {
+            height: 45px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 992px) {
@@ -886,6 +924,52 @@
             .view_all {
               padding-bottom: 3px;
             }
+          }
+        }
+      }
+    }
+  }
+  .search {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    .search_inner {
+      max-width: 500px;
+
+      .search_inner_top {
+        h1 {
+          font-size: 30px;
+        }
+
+        button {
+          font-size: 16px;
+          width: 32px;
+          height: 32px;
+        }
+      }
+
+      .search_inner_input_holder {
+        height: 40px;
+
+        input {
+          font-size: 16px;
+          max-width: 90%;
+        }
+
+        button {
+          max-width: 10%;
+          font-size: 16px;
+        }
+      }
+
+      ul {
+        max-height: 220px;
+        min-height: 220px;
+
+        li {
+          a {
+            height: 40px;
+            font-size: 15px;
           }
         }
       }
@@ -1033,6 +1117,54 @@
       }
     }
   }
+  .search {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .search_inner {
+      max-width: 500px;
+      top: -80px;
+
+      .search_inner_top {
+        h1 {
+          font-size: 23px;
+        }
+
+        button {
+          font-size: 15px;
+          width: 29px;
+          height: 29px;
+        }
+      }
+
+      .search_inner_input_holder {
+        height: 35px;
+        margin-top: 20px;
+
+        input {
+          font-size: 15px;
+          max-width: 89.5%;
+        }
+
+        button {
+          max-width: 10.5%;
+          font-size: 15px;
+        }
+      }
+
+      ul {
+        max-height: 180px;
+        min-height: 180px;
+
+        li {
+          a {
+            height: 32px;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Pixel 2 XL
@@ -1170,6 +1302,54 @@
             .view_all {
               padding-bottom: 5px;
             }
+          }
+        }
+      }
+    }
+  }
+  .search {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .search_inner {
+      max-width: 400px;
+      top: -80px;
+
+      .search_inner_top {
+        h1 {
+          font-size: 23px;
+        }
+
+        button {
+          font-size: 15px;
+          width: 29px;
+          height: 29px;
+        }
+      }
+
+      .search_inner_input_holder {
+        height: 40px;
+        margin-top: 20px;
+
+        input {
+          font-size: 16px;
+          max-width: 89.5%;
+        }
+
+        button {
+          max-width: 10.5%;
+          font-size: 15px;
+        }
+      }
+
+      ul {
+        max-height: 160px;
+        min-height: 160px;
+
+        li {
+          a {
+            height: 35px;
+            font-size: 15px;
           }
         }
       }
@@ -1324,6 +1504,54 @@
       }
     }
   }
+  .search {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .search_inner {
+      max-width: 550px;
+      top: -80px;
+
+      .search_inner_top {
+        h1 {
+          font-size: 34px;
+        }
+
+        button {
+          font-size: 18px;
+          width: 34px;
+          height: 34px;
+        }
+      }
+
+      .search_inner_input_holder {
+        height: 40px;
+        margin-top: 40px;
+
+        input {
+          font-size: 16px;
+          max-width: 89.5%;
+        }
+
+        button {
+          max-width: 10.5%;
+          font-size: 15px;
+        }
+      }
+
+      ul {
+        max-height: 240px;
+        min-height: 240px;
+
+        li {
+          a {
+            height: 45px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
@@ -1465,6 +1693,54 @@
       }
     }
   }
+  .search {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .search_inner {
+      max-width: 550px;
+      top: -80px;
+
+      .search_inner_top {
+        h1 {
+          font-size: 26px;
+        }
+
+        button {
+          font-size: 15px;
+          width: 29px;
+          height: 29px;
+        }
+      }
+
+      .search_inner_input_holder {
+        height: 45px;
+        margin-top: 20px;
+
+        input {
+          font-size: 16px;
+          max-width: 92%;
+        }
+
+        button {
+          max-width: 8%;
+          font-size: 15px;
+        }
+      }
+
+      ul {
+        max-height: 180px;
+        min-height: 180px;
+
+        li {
+          a {
+            height: 35px;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // iPad Pro
@@ -1562,6 +1838,54 @@
   .mobile_nav {
     display: none;
   }
+  .search {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .search_inner {
+      max-width: 590px;
+      top: -120px;
+
+      .search_inner_top {
+        h1 {
+          font-size: 34px;
+        }
+
+        button {
+          font-size: 18px;
+          width: 34px;
+          height: 34px;
+        }
+      }
+
+      .search_inner_input_holder {
+        height: 40px;
+        margin-top: 40px;
+
+        input {
+          font-size: 16px;
+          max-width: 89.5%;
+        }
+
+        button {
+          max-width: 10.5%;
+          font-size: 15px;
+        }
+      }
+
+      ul {
+        max-height: 240px;
+        min-height: 240px;
+
+        li {
+          a {
+            height: 45px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
@@ -1657,6 +1981,54 @@
   }
   .mobile_nav {
     display: none;
+  }
+  .search {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .search_inner {
+      max-width: 590px;
+      top: -120px;
+
+      .search_inner_top {
+        h1 {
+          font-size: 34px;
+        }
+
+        button {
+          font-size: 18px;
+          width: 34px;
+          height: 34px;
+        }
+      }
+
+      .search_inner_input_holder {
+        height: 40px;
+        margin-top: 40px;
+
+        input {
+          font-size: 16px;
+          max-width: 89.5%;
+        }
+
+        button {
+          max-width: 10.5%;
+          font-size: 15px;
+        }
+      }
+
+      ul {
+        max-height: 240px;
+        min-height: 240px;
+
+        li {
+          a {
+            height: 45px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -1754,5 +2126,53 @@
   }
   .mobile_nav {
     display: none;
+  }
+  .search {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .search_inner {
+      max-width: 790px;
+      top: -120px;
+
+      .search_inner_top {
+        h1 {
+          font-size: 34px;
+        }
+
+        button {
+          font-size: 18px;
+          width: 34px;
+          height: 34px;
+        }
+      }
+
+      .search_inner_input_holder {
+        height: 50px;
+        margin-top: 40px;
+
+        input {
+          font-size: 19px;
+          max-width: 93.5%;
+        }
+
+        button {
+          max-width: 6.5%;
+          font-size: 18px;
+        }
+      }
+
+      ul {
+        max-height: 280px;
+        min-height: 280px;
+
+        li {
+          a {
+            height: 45px;
+            font-size: 17px;
+          }
+        }
+      }
+    }
   }
 }
