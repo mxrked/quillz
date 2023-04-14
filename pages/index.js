@@ -16,6 +16,7 @@ import { MobileNavMenu } from "@/assets/components/global/Nav/Mobile/MobileNavMe
 import { Search } from "@/assets/components/global/Nav/Both/Search";
 import { IndexTop } from "@/assets/components/pages/Index/IndexTop";
 import { IndexProducts } from "@/assets/components/pages/Index/IndexProducts";
+import { IndexTypes } from "@/assets/components/pages/Index/IndexTypes";
 
 // Style Imports
 import "../assets/styles/modules/Index/Index.module.css";
@@ -45,6 +46,7 @@ export default function Home() {
       <main id="pageMain" className="page-main">
         <IndexTop />
         <IndexProducts />
+        <IndexTypes />
       </main>
     </div>
   );
