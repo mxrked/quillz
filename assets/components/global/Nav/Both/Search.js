@@ -47,7 +47,13 @@ export const Search = () => {
             }}
           />
 
-          <button id="searchGo" className="half-second">
+          <button
+            id="searchGo"
+            className="half-second"
+            onClick={(e) => {
+              SearchRoute(e, window);
+            }}
+          >
             <FaSearch className={`${styles.icon}`} />
           </button>
         </div>
