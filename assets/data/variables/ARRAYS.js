@@ -126,5 +126,5 @@ export {
   HOUSING_KWS,
   CART_KWS,
 };
-export { FADES };
+export { FADES, TYPE_CATEGORIES };
 export { INDEX_TOP_SLIDES };
