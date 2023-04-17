@@ -110,6 +110,23 @@ body {
   line-height: 1;
   overflow-y: hidden;
   pointer-events: none;
+  scrollbar-color: #eca869 #f9f9f9;
+  scrollbar-width: thin;
+}
+body::-webkit-scrollbar {
+  width: 15px;
+}
+body::-webkit-scrollbar-track {
+  background: #f9f9f9;
+}
+body::-webkit-scrollbar-thumb {
+  background: #eca869;
+  border-top: none;
+  border-bottom: none;
+  cursor: pointer;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: #e08f43;
 }
 
 ol,

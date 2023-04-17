@@ -53,14 +53,14 @@
 
   &::-webkit-scrollbar {
     width: $width;
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    // box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   }
   &::-webkit-scrollbar-track {
     background: $track;
   }
   &::-webkit-scrollbar-thumb {
     background: $thumb;
-    border: 1px solid $track;
+    // border: 1px solid $track;
     border-top: none;
     border-bottom: none;
     cursor: pointer;

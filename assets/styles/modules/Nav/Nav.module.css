@@ -599,6 +599,23 @@
   position: absolute;
   width: 100%;
   left: 0;
+  scrollbar-color: #eca869 #f9f9f9;
+  scrollbar-width: thin;
+}
+.search .search_inner ul::-webkit-scrollbar {
+  width: 10px;
+}
+.search .search_inner ul::-webkit-scrollbar-track {
+  background: #f9f9f9;
+}
+.search .search_inner ul::-webkit-scrollbar-thumb {
+  background: #eca869;
+  border-top: none;
+  border-bottom: none;
+  cursor: pointer;
+}
+.search .search_inner ul::-webkit-scrollbar-thumb:hover {
+  background: #eca869;
 }
 .search .search_inner ul .profile_link {
   display: none;

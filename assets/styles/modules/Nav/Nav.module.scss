@@ -667,6 +667,7 @@
       position: absolute;
       width: 100%;
       left: 0;
+      @include customScrollBar(10px, $Alabaster, $Porsche, $Porsche);
 
       .profile_link {
         display: none;
