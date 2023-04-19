@@ -107,7 +107,6 @@ section {
 }
 
 body {
-  line-height: 1;
   overflow-y: hidden;
   pointer-events: none;
   scrollbar-color: #eca869 #f9f9f9;
