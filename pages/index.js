@@ -18,6 +18,7 @@ import { IndexTop } from "@/assets/components/pages/Index/IndexTop";
 import { IndexProducts } from "@/assets/components/pages/Index/IndexProducts";
 import { IndexTypes } from "@/assets/components/pages/Index/IndexTypes";
 import { IndexInfoContact } from "@/assets/components/pages/Index/IndexInfoContact";
+import { Footer } from "@/assets/components/global/Footer/Footer";
 
 // Style Imports
 import "../assets/styles/modules/Index/Index.module.css";
@@ -50,6 +51,8 @@ export default function Home() {
         <IndexTypes />
         <IndexInfoContact />
       </main>
+
+      <Footer />
     </div>
   );
 }
