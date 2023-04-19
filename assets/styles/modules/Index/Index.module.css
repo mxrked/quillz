@@ -428,11 +428,14 @@
   .index_info_contact {
     margin-top: 120px;
     margin-bottom: 100px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .index_info_contact .index_info_contact_inner {
-    max-width: 1100px;
+    max-width: 1150px;
+  }
+  .index_info_contact .index_info_contact_inner .index_info_contact_inner_box .index_info_contact_inner_row .index_info_contact_inner_side {
+    height: 450px;
   }
   .index_info_contact .index_info_contact_inner .index_info_contact_inner_box .index_info_contact_inner_row .index_info_contact_L .index_info_contact_inner_side_cnt h1 {
     font-size: 35px;
