@@ -18,6 +18,201 @@
 }
 
 // Desktop
+.login_register_main {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+
+  .login_register_main_inner {
+    max-width: 1350px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 40px;
+    padding-right: 40px;
+
+    .login_register_main_inner_top {
+      height: 500px;
+      text-align: center;
+      @include displayElement(flex, center, center);
+
+      .logo {
+        color: $EbonyClay;
+        display: grid;
+        margin-bottom: 50px;
+
+        .top_text {
+          font-family: "Josefin Sans Bold Italic";
+          font-size: $Logo;
+        }
+
+        .bottom_text {
+          font-family: "Lato Regular";
+          font-size: $Text;
+        }
+      }
+
+      h1 {
+        color: $BrandyRose;
+        font-family: "Lato Bold";
+        font-size: $SubHeading;
+        cursor: default;
+      }
+
+      p {
+        font-size: $Text;
+        color: $EbonyClay;
+        font-family: "Lato Regular";
+        @include padding(30px, 40px, 0, 0);
+        line-height: 30px;
+        max-width: 650px;
+        @include quickCenter("relative");
+        cursor: default;
+      }
+
+      a {
+        @include displayElement(inline-flex, center, center);
+        height: 50px;
+        width: 180px;
+        color: $Porsche;
+        @include padding(22px, 20px, 10px, 10px);
+        font-size: 18px;
+        text-decoration: none;
+
+        span {
+          text-transform: uppercase;
+          font-family: "Lato Regular";
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .login_register_main_inner_forms {
+      width: 100%;
+      margin-top: 120px;
+      .login_register_main_inner_forms_box {
+        .login_register_main_inner_forms_row {
+          .login_register_main_inner_forms_form {
+            height: 500px;
+            display: flex;
+            justify-content: center;
+          }
+
+          .register_form_holder {
+            .login_register_main_inner_forms_form_cnt {
+              width: 100%;
+              max-width: 400px;
+
+              .form_name {
+                font-family: "Lato Bold";
+                font-size: 23px;
+                color: $EbonyClay;
+                opacity: 0.6;
+                display: block;
+                margin-bottom: 40px;
+                cursor: default;
+              }
+
+              .form_set {
+                display: grid;
+                margin-bottom: 20px;
+
+                label {
+                  font-family: "Lato Medium";
+                  font-size: 19px;
+                  display: block;
+                  margin-bottom: 10px;
+                  cursor: pointer;
+                }
+
+                input {
+                  background-color: rgba(227, 227, 227, 0.241);
+                  height: 45px;
+                  width: 100%;
+                  padding-left: 15px;
+                  padding-right: 15px;
+                  font-family: "Lato Regular";
+                  font-size: 15px;
+                }
+              }
+
+              button {
+                margin-top: 30px;
+                background-color: $Porsche;
+                color: $Alabaster;
+                width: 100px;
+                height: 45px;
+                font-family: "Lato Regular";
+                font-size: 18px;
+
+                &:hover {
+                  background-color: $BrandyRose;
+                }
+              }
+            }
+          }
+
+          .login_form_holder {
+            .login_register_main_inner_forms_form_cnt {
+              width: 100%;
+              max-width: 400px;
+
+              .form_name {
+                font-family: "Lato Bold";
+                font-size: 23px;
+                color: $EbonyClay;
+                opacity: 0.6;
+                display: block;
+                margin-bottom: 40px;
+                cursor: default;
+              }
+
+              .form_set {
+                display: grid;
+                margin-bottom: 20px;
+
+                label {
+                  font-family: "Lato Medium";
+                  font-size: 19px;
+                  display: block;
+                  margin-bottom: 10px;
+                  cursor: pointer;
+                }
+
+                input {
+                  background-color: rgba(227, 227, 227, 0.241);
+                  height: 45px;
+                  width: 100%;
+                  padding-left: 15px;
+                  padding-right: 15px;
+                  font-family: "Lato Regular";
+                  font-size: 15px;
+                }
+              }
+
+              button {
+                margin-top: 30px;
+                background-color: $Porsche;
+                color: $Alabaster;
+                width: 75px;
+                height: 45px;
+                font-family: "Lato Regular";
+                font-size: 18px;
+
+                &:hover {
+                  background-color: $BrandyRose;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 // Responsive
 @media all and (max-width: 1995px) {
