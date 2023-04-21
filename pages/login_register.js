@@ -24,11 +24,13 @@ export default function Login_Register() {
   // Checking if user is logged in, takes them back to home
   useEffect(() => {
     // Checking sessionStorage
-    if (sessionStorage.getItem("User Email")) {
-      router.push("/");
-    } else {
-      return;
-    }
+    setTimeout(() => {
+      if (sessionStorage.getItem("User Email")) {
+        router.push("/");
+      } else {
+        return;
+      }
+    }, 1000);
   }, [router]);
 
   return (
