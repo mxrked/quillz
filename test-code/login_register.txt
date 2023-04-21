@@ -1,0 +1,171 @@
+// React/Next Imports
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+
+// Library Imports
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut,
+} from "firebase/auth";
+
+// Data/Functions/Images Imports
+import { auth } from "@/firebase/config";
+
+// Component Imports
+import { PageHead } from "@/assets/components/global/PageHead";
+
+// Style Imports
+import "../assets/styles/modules/Login_Register/Login_Register.module.css";
+import DeclareStorageVariable from "@/assets/functions/data/storage/DeclareStorageVariable";
+
+export default function Login_Register() {
+  const Register = async () => {
+    try {
+      const user = await createUserWithEmailAndPassword(
+        auth,
+        registerEmail,
+        registerPassword
+      );
+      console.log(user);
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+
+  const Login = async () => {
+    try {
+      const user = await signInWithEmailAndPassword(
+        auth,
+        loginEmail,
+        loginPassword
+      );
+      console.log(user);
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+
+  const Signout = async () => {
+    await signOut(auth);
+  };
+
+  const router = useRouter();
+
+  const [registerEmail, setRegisterEmail] = useState("");
+  const [registerPassword, setRegisterPassword] = useState("");
+  const [loginEmail, setLoginEmail] = useState("");
+  const [loginPassword, setLoginPassword] = useState("");
+
+  const [user, setUser] = useState({});
+
+  // Changing to a different user
+  useEffect(() => {
+    onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+    });
+  }, []);
+
+  // Storing user email
+  useEffect(() => {
+    DeclareStorageVariable("session", "User Email", user?.email);
+  }, [user]);
+
+  // Checking if user is logged in, takes them back to home
+  useEffect(() => {
+    // Checking sessionStorage
+    if (sessionStorage.getItem("Logged In")) {
+      if (
+        sessionStorage.getItem("Username") &&
+        sessionStorage.getItem("Encrypted Password")
+      ) {
+        router.push("/");
+      } else {
+        return;
+      }
+    } else {
+      return;
+    }
+  }, [router]);
+
+  return (
+    <div
+      id="page"
+      className="page login_register-page overrides_LOGIN_REGISTER"
+    >
+      {/* Global Components */}
+      <PageHead />
+
+      <main id="pageMain" className="page-main">
+        <div>
+          <h1>Register</h1>
+
+          <div>
+            <input
+              placeholder="Enter Email"
+              id="registerEmail"
+              onChange={(e) => {
+                setRegisterEmail(e.currentTarget.value);
+              }}
+            />
+            <input
+              placeholder="Enter Password"
+              id="registerPassword"
+              onChange={(e) => {
+                setRegisterPassword(e.currentTarget.value);
+              }}
+            />
+
+            <button
+              onClick={(e) => {
+                Register();
+              }}
+            >
+              Register
+            </button>
+          </div>
+        </div>
+        <div>
+          <h1>Login</h1>
+
+          <div>
+            <input
+              placeholder="Enter Email"
+              id="loginEmail"
+              onChange={(e) => {
+                setLoginEmail(e.currentTarget.value);
+              }}
+            />
+            <input
+              placeholder="Enter Password"
+              id="loginPassword"
+              onChange={(e) => {
+                setLoginPassword(e.currentTarget.value);
+              }}
+            />
+
+            <button
+              onClick={(e) => {
+                Login();
+              }}
+            >
+              Login
+            </button>
+          </div>
+        </div>
+
+        <h2>User Logged In: </h2>
+        {user?.email}
+
+        <button
+          onClick={() => {
+            Signout();
+          }}
+        >
+          Sign Out
+        </button>
+      </main>
+    </div>
+  );
+}
