@@ -35,17 +35,10 @@ export default function Profile() {
   // Checking if user is not logged in, takes them back to home
   useEffect(() => {
     // Checking sessionStorage
-    if (sessionStorage.getItem("Logged In")) {
-      if (
-        sessionStorage.getItem("Username") &&
-        sessionStorage.getItem("Encrypted Password")
-      ) {
-        return;
-      } else {
-        router.push("/");
-      }
+    if (sessionStorage.getItem("User Email")) {
+      return;
     } else {
-      router.push("/");
+      router.push("/login_register");
     }
   }, [router]);
 
