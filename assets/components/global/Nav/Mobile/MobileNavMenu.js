@@ -7,14 +7,24 @@
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 
-import { FaCaretDown, FaSearch, FaShoppingCart, FaTimes } from "react-icons/fa";
+import {
+  FaCaretDown,
+  FaSearch,
+  FaShoppingCart,
+  FaSignOutAlt,
+  FaTimes,
+} from "react-icons/fa";
 import { MdAccountCircle } from "react-icons/md";
 
 import CloseMobileNav from "@/assets/functions/dom/closers/CloseMobileNav";
+import Signout from "@/assets/functions/async/Signout";
+import RemoveStorageVariable from "@/assets/functions/data/storage/RemoveStorageVariable";
 
 import styles from "../../../../styles/modules/Nav/Nav.module.css";
 
 export const MobileNavMenu = () => {
+  const router = useRouter();
+
   return (
     <div id="mobileNavMenu" className={`${styles.mobile_nav_menu}`}>
       <div
@@ -201,6 +211,24 @@ export const MobileNavMenu = () => {
               <span className="cart-counter">0</span>
             </div>
           </a>
+          <button
+            className={`${styles.sign_out} sign-out-btn half-second`}
+            onClick={() => {
+              Signout();
+              RemoveStorageVariable("session", "Logged In User");
+
+              setTimeout(() => {
+                CloseMobileNav();
+              }, 200);
+
+              setTimeout(() => {
+                router.reload();
+              }, 2400);
+            }}
+          >
+            <span className="half-second">Sign Out</span>
+            <FaSignOutAlt className={`${styles.icon}`} />
+          </button>
         </div>
       </div>
     </div>

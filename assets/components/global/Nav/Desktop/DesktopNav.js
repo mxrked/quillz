@@ -7,13 +7,20 @@
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 
-import { FaCaretDown, FaSearch, FaShoppingCart } from "react-icons/fa";
+import {
+  FaCaretDown,
+  FaSearch,
+  FaShoppingCart,
+  FaSignOutAlt,
+} from "react-icons/fa";
 import { MdAccountCircle } from "react-icons/md";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 import TriggerInViewMotion from "@/assets/functions/dom/triggers/TriggerInViewMotion";
 import ToggleSearch from "@/assets/functions/dom/togglers/ToggleSearch";
+import Signout from "@/assets/functions/async/Signout";
+import RemoveStorageVariable from "@/assets/functions/data/storage/RemoveStorageVariable";
 
 import { FADE_IN } from "@/assets/anims/FADES";
 
@@ -216,9 +223,22 @@ export const DesktopNav = () => {
               >
                 <div className={`${styles.desktop_nav_inner_side_cnt}`}>
                   <ul className={`${styles.side_links}`}>
+                    <button
+                      className={`${styles.sign_out} sign-out-btn half-second`}
+                      onClick={() => {
+                        Signout();
+                        RemoveStorageVariable("session", "Logged In User");
+
+                        setTimeout(() => {
+                          router.reload();
+                        }, 200);
+                      }}
+                    >
+                      <FaSignOutAlt className={`${styles.icon}`} />
+                    </button>
+
                     <li className={`${styles.profile_link} profile-link`}>
                       <a href="/profile" className="half-second">
-                        <span>My Profile</span>{" "}
                         <MdAccountCircle className={`${styles.icon}`} />
                       </a>
                     </li>
