@@ -120,7 +120,9 @@ export const Footer = () => {
                               <span>My Cart</span>
                             </a>
                           </li>
-                          <li className={`${styles.login_register_link}`}>
+                          <li
+                            className={`${styles.login_register_link} login-register-link-footer`}
+                          >
                             <a
                               href="/login_register"
                               className={`login-register-link half-second`}
