@@ -175,6 +175,41 @@ function MyApp({ Component, pageProps }) {
     }, 500);
   }, [router]);
 
+  //! Display/Hide links if/not logged in
+  // Display/Hide links if/not logged in
+  useEffect(() => {
+    if (router.pathname !== "/login_register") {
+      if (sessionStorage.getItem("Logged In User")) {
+        document.querySelectorAll(".login-register-link").forEach((link) => {
+          link.style.display = "none";
+        });
+
+        document.querySelector(
+          "footer .login-register-link-footer"
+        ).style.height = 0;
+
+        document.querySelectorAll(".profile-link").forEach((link) => {
+          link.style.display = "flex";
+        });
+        document.querySelectorAll(".sign-out-btn").forEach((btn) => {
+          btn.style.display = "flex";
+        });
+      }
+
+      if (!sessionStorage.getItem("Logged In User")) {
+        document.querySelectorAll(".login-register-link").forEach((link) => {
+          link.style.display = "flex";
+        });
+        document.querySelectorAll(".profile-link").forEach((link) => {
+          link.style.display = "none";
+        });
+        document.querySelectorAll(".sign-out-btn").forEach((btn) => {
+          btn.style.display = "none";
+        });
+      }
+    }
+  }, [router]);
+
   return <Component {...pageProps} />;
 }
 
