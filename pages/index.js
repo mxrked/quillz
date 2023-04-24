@@ -22,6 +22,7 @@ import { Footer } from "@/assets/components/global/Footer/Footer";
 
 // Style Imports
 import "../assets/styles/modules/Index/Index.module.css";
+
 export default function Home() {
   const router = useRouter();
 
