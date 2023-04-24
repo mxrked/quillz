@@ -1334,16 +1334,18 @@
     max-width: 450px;
     margin-left: auto;
     margin-right: auto;
-    margin-left: 10px;
+    margin-left: 0px;
   }
   .index_info_contact .index_info_contact_inner .index_info_contact_inner_box .index_info_contact_inner_row .index_info_contact_L .index_info_contact_inner_side_cnt p {
     font-size: 15px;
     max-width: 550px;
     line-height: 23px;
+    padding-left: 0;
   }
   .index_info_contact .index_info_contact_inner .index_info_contact_inner_box .index_info_contact_inner_row .index_info_contact_L .index_info_contact_inner_side_cnt a {
     font-size: 13px;
     width: 155px;
+    margin-left: 0;
   }
   .index_info_contact .index_info_contact_inner .index_info_contact_inner_box .index_info_contact_inner_row .index_info_contact_R {
     height: 320px;

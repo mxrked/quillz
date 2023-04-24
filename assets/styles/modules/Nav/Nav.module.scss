@@ -158,21 +158,23 @@
             .side_links {
               @include displayElement(flex, flex-end, center);
 
+              .sign_out {
+                color: $BrandyRose;
+                font-size: 16px;
+                margin-right: 10px;
+              }
+
               .profile_link {
                 a {
                   text-decoration: none;
                   color: $BrandyRose;
                   font-family: "Lato Regular";
-                  @include displayElement(none, center, center);
+                  justify-content: center;
+                  align-items: center;
+                  font-size: 28px;
 
                   &:hover {
                     opacity: 0.5;
-                  }
-
-                  span {
-                    margin-right: 10px;
-                    font-size: 17px;
-                    text-transform: uppercase;
                   }
                 }
               }
@@ -320,6 +322,8 @@
                   }
 
                   .login_register_link {
+                    justify-content: flex-end;
+
                     a {
                       text-decoration: none;
                       color: $BrandyRose;
@@ -506,6 +510,28 @@
             padding-right: 1px;
             padding-bottom: 1px;
           }
+        }
+      }
+
+      .sign_out {
+        @include displayElement(flex, flex-end, center);
+        width: 100%;
+        height: 60px;
+        background-color: $Sandal;
+        padding-left: 25px;
+        padding-right: 25px;
+        font-family: "Lato Bold";
+        text-decoration: none;
+        color: $Alabaster;
+
+        span {
+          font-size: 23px;
+          text-transform: uppercase;
+          margin-right: 30px;
+        }
+
+        .icon {
+          font-size: 23px;
         }
       }
 
@@ -906,6 +932,18 @@
           }
         }
 
+        .sign_out {
+          height: 42px;
+
+          span {
+            font-size: 16px;
+          }
+
+          .icon {
+            font-size: 19px;
+          }
+        }
+
         .sub_links_toggler {
           height: 42px;
 
@@ -1284,6 +1322,18 @@
           }
         }
 
+        .sign_out {
+          height: 45px;
+
+          span {
+            font-size: 16px;
+          }
+
+          .icon {
+            font-size: 19px;
+          }
+        }
+
         .sub_links_toggler {
           height: 45px;
 
@@ -1478,6 +1528,18 @@
             span {
               font-size: 12px;
             }
+          }
+        }
+
+        .sign_out {
+          height: 53px;
+
+          span {
+            font-size: 21px;
+          }
+
+          .icon {
+            font-size: 19px;
           }
         }
 
@@ -1766,6 +1828,7 @@
                   }
 
                   a {
+                    height: 22px;
                     span {
                       font-size: 13px;
                     }
@@ -1901,7 +1964,6 @@
                   ul {
                     li {
                       a {
-                        height: 34px;
                         span {
                           font-size: 14px;
                         }
@@ -1910,6 +1972,8 @@
                   }
 
                   a {
+                    height: 22px;
+
                     span {
                       font-size: 13px;
                     }

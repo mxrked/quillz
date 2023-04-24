@@ -1681,18 +1681,20 @@
                 font-size: 23px;
                 max-width: 450px;
                 @include quickCenter("relative");
-                margin-left: 10px;
+                margin-left: 0px;
               }
 
               p {
                 font-size: 15px;
                 max-width: 550px;
                 line-height: 23px;
+                padding-left: 0;
               }
 
               a {
                 font-size: 13px;
                 width: 155px;
+                margin-left: 0;
               }
             }
           }
