@@ -13,14 +13,13 @@ import {
   onAuthStateChanged,
   signOut,
 } from "firebase/auth";
+import { auth } from "@/firebase/config";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { FaHome } from "react-icons/fa";
 
-import { auth } from "@/firebase/config";
 import { TriggerExitAnimations } from "@/assets/functions/dom/triggers/TriggerExitAnimations";
 import TriggerInViewMotion from "@/assets/functions/dom/triggers/TriggerInViewMotion";
-import RemoveStorageVariable from "@/assets/functions/data/storage/RemoveStorageVariable";
 import DeclareStorageVariable from "@/assets/functions/data/storage/DeclareStorageVariable";
 
 import { FADES } from "@/assets/data/variables/ARRAYS";
@@ -86,7 +85,37 @@ const CheckSamePasswords = () => {
   return validPasswords;
 };
 
+// This checks the invalidUser state value to determine if the current register inputs dont match an existing user
+const StyleInvalidUserRegister = (invalidUser_REGISTER) => {
+  if (invalidUser_REGISTER) {
+    const INPUTS = [
+      document.getElementById("registerEmail"),
+      document.getElementById("registerPassword"),
+      document.getElementById("registerConfirmPassword"),
+    ];
+
+    INPUTS.forEach((input) => {
+      input.style.border = "1px solid red";
+    });
+  }
+};
+
+// This checks the invalidUser state value to determine if the current login inputs dont match an existing user
+const StyleInvalidUserLogin = (invalidUser_LOGIN) => {
+  if (invalidUser_LOGIN) {
+    const INPUTS = [
+      document.getElementById("loginEmail"),
+      document.getElementById("loginPassword"),
+    ];
+
+    INPUTS.forEach((input) => {
+      input.style.border = "1px solid red";
+    });
+  }
+};
+
 export const Login_RegisterMain = () => {
+  //! Firebase Register
   const Register = async () => {
     try {
       const user = await createUserWithEmailAndPassword(
@@ -95,11 +124,16 @@ export const Login_RegisterMain = () => {
         registerPassword
       );
       console.log(user);
+
+      setInvalidUser_REGISTER(false);
     } catch (error) {
       console.log(error.message);
+
+      setInvalidUser_REGISTER(true); // This indicates that the user is invalid/doesnt exist
     }
   };
 
+  //! Firebase Login
   const Login = async () => {
     try {
       const user = await signInWithEmailAndPassword(
@@ -108,14 +142,20 @@ export const Login_RegisterMain = () => {
         loginPassword
       );
       console.log(user);
+
+      setValidUser(true);
+      setInvalidUser_LOGIN(false);
     } catch (error) {
       console.log(error.message);
+      setValidUser(false);
+      setInvalidUser_LOGIN(true); // This indicates that the user is invalid/doesnt exist
     }
   };
 
-  const Signout = async () => {
-    await signOut(auth);
-  };
+  //! Firebase Signout
+  // const Signout = async () => {
+  //   await signOut(auth);
+  // };
 
   const [isMobile, setIsMobile] = useState(false); // This is used to indicate if the variant needs to be changed
   const [registerEmail, setRegisterEmail] = useState("");
@@ -123,12 +163,10 @@ export const Login_RegisterMain = () => {
   const [loginEmail, setLoginEmail] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
 
+  const [invalidUser_REGISTER, setInvalidUser_REGISTER] = useState(false);
+  const [invalidUser_LOGIN, setInvalidUser_LOGIN] = useState(false);
+  const [validUser, setValidUser] = useState(false);
   const [user, setUser] = useState({});
-
-  // Exit animations trigger
-  useEffect(() => {
-    TriggerExitAnimations();
-  }, []);
 
   // Changing to a different user
   useEffect(() => {
@@ -137,16 +175,20 @@ export const Login_RegisterMain = () => {
     });
   }, []);
 
-  // Storing/Removing user email
+  // Exit animations trigger
   useEffect(() => {
-    if (user?.email == undefined) {
-      RemoveStorageVariable("session", "User Email");
-    }
+    TriggerExitAnimations();
+  }, []);
 
-    if (user?.email !== undefined) {
-      DeclareStorageVariable("session", "User Email", user?.email);
-    }
-  }, [user]);
+  // Styling invalid user for login
+  useEffect(() => {
+    StyleInvalidUserLogin(invalidUser_LOGIN);
+  }, [invalidUser_LOGIN]);
+
+  // Styling invalid user for register
+  useEffect(() => {
+    StyleInvalidUserRegister(invalidUser_REGISTER);
+  }, [invalidUser_REGISTER]);
 
   const router = useRouter();
 
@@ -169,6 +211,14 @@ export const Login_RegisterMain = () => {
       setIsMobile(false);
     }
   }, [router]);
+
+  //! This will route the user after they successfully login
+  useEffect(() => {
+    if (validUser) {
+      DeclareStorageVariable("session", "Logged In User", user?.email);
+      router.push("/");
+    }
+  }, [validUser]);
 
   return (
     <section
@@ -216,7 +266,7 @@ export const Login_RegisterMain = () => {
                 className={`${styles.login_register_main_inner_forms_row} row`}
               >
                 <div
-                  className={`${styles.login_register_main_inner_forms_form} ${styles.register_form_holder} col-lg-6 col-md-6 col-sm-12 col-xs-12`}
+                  className={`${styles.login_register_main_inner_forms_form} ${styles.register_form_holder} ${styles.form_L} col-lg-6 col-md-6 col-sm-12 col-xs-12`}
                 >
                   <div
                     className={`${styles.login_register_main_inner_forms_form_cnt}`}
@@ -294,6 +344,7 @@ export const Login_RegisterMain = () => {
 
                         if (checkInputs && checkEmail && checkPasswords) {
                           Register();
+                          StyleInvalidUserRegister(invalidUser_REGISTER);
                         }
                       }}
                     >
@@ -302,7 +353,7 @@ export const Login_RegisterMain = () => {
                   </div>
                 </div>
                 <div
-                  className={`${styles.login_register_main_inner_forms_form} ${styles.login_form_holder} col-lg-6 col-md-6 col-sm-12 col-xs-12`}
+                  className={`${styles.login_register_main_inner_forms_form} ${styles.login_form_holder} ${styles.form_R} col-lg-6 col-md-6 col-sm-12 col-xs-12`}
                 >
                   <div
                     className={`${styles.login_register_main_inner_forms_form_cnt}`}
@@ -354,15 +405,8 @@ export const Login_RegisterMain = () => {
                         if (INPUTS[1].value.length >= 6) {
                           if (checkEmail && checkInputs) {
                             Login();
-
-                            setTimeout(() => {
-                              if (sessionStorage.getItem("User Email")) {
-                                router.push("/");
-                              }
-                            }, 500);
+                            StyleInvalidUserLogin(invalidUser_LOGIN);
                           }
-                        } else {
-                          INPUTS[1].style.border = "1px solid red";
                         }
                       }}
                     >
