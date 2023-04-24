@@ -25,7 +25,7 @@ export default function Login_Register() {
   useEffect(() => {
     // Checking sessionStorage
     setTimeout(() => {
-      if (sessionStorage.getItem("User Email")) {
+      if (sessionStorage.getItem("Logged In User")) {
         router.push("/");
       } else {
         return;
