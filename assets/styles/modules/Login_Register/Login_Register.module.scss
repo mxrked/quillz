@@ -684,8 +684,176 @@
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .login_register_main {
+    .login_register_main_inner {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .login_register_main_inner_top {
+        height: 400px;
+
+        .logo {
+          margin-bottom: 35px;
+
+          .top_text {
+            font-size: 26px;
+          }
+
+          .bottom_text {
+            font-size: 15px;
+          }
+        }
+
+        h1 {
+          font-size: 21px;
+        }
+
+        p {
+          font-size: 16px;
+          max-width: 450px;
+          padding-bottom: 10px;
+        }
+
+        a {
+          font-size: 16px;
+        }
+      }
+
+      .login_register_main_inner_forms {
+        margin-top: 60px;
+
+        .login_register_main_inner_forms_box {
+          max-width: 870px;
+
+          .login_register_main_inner_forms_row {
+            .login_register_main_inner_forms_form {
+              max-width: 50%;
+              width: 100%;
+
+              .login_register_main_inner_forms_form_cnt {
+                max-width: 350px;
+
+                .form_name {
+                  font-size: 23px;
+                }
+
+                .form_set {
+                  label {
+                    font-size: 18px;
+                  }
+
+                  input {
+                    height: 45px;
+                    font-size: 15px;
+                  }
+                }
+
+                button {
+                  font-size: 16px;
+                  height: 40px;
+                  max-width: 90px;
+                }
+              }
+            }
+
+            .form_L {
+              height: 500px;
+            }
+
+            .form_R {
+              height: 400px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // Laptops
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .login_register_main {
+    .login_register_main_inner {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .login_register_main_inner_top {
+        height: 400px;
+
+        .logo {
+          margin-bottom: 35px;
+
+          .top_text {
+            font-size: 26px;
+          }
+
+          .bottom_text {
+            font-size: 15px;
+          }
+        }
+
+        h1 {
+          font-size: 21px;
+        }
+
+        p {
+          font-size: 16px;
+          max-width: 450px;
+          padding-bottom: 10px;
+        }
+
+        a {
+          font-size: 16px;
+        }
+      }
+
+      .login_register_main_inner_forms {
+        margin-top: 60px;
+
+        .login_register_main_inner_forms_box {
+          max-width: 1000px;
+
+          .login_register_main_inner_forms_row {
+            .login_register_main_inner_forms_form {
+              max-width: 50%;
+              width: 100%;
+
+              .login_register_main_inner_forms_form_cnt {
+                max-width: 400px;
+
+                .form_name {
+                  font-size: 23px;
+                }
+
+                .form_set {
+                  label {
+                    font-size: 18px;
+                  }
+
+                  input {
+                    height: 45px;
+                    font-size: 15px;
+                  }
+                }
+
+                button {
+                  font-size: 16px;
+                  height: 40px;
+                  max-width: 90px;
+                }
+              }
+            }
+
+            .form_L {
+              height: 500px;
+            }
+
+            .form_R {
+              height: 400px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

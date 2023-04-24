@@ -490,4 +490,130 @@
   .login_register_main .login_register_main_inner .login_register_main_inner_forms .login_register_main_inner_forms_box .login_register_main_inner_forms_row .form_R {
     height: 470px;
   }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .login_register_main .login_register_main_inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_top {
+    height: 400px;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_top .logo {
+    margin-bottom: 35px;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_top .logo .top_text {
+    font-size: 26px;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_top .logo .bottom_text {
+    font-size: 15px;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_top h1 {
+    font-size: 21px;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_top p {
+    font-size: 16px;
+    max-width: 450px;
+    padding-bottom: 10px;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_top a {
+    font-size: 16px;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_forms {
+    margin-top: 60px;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_forms .login_register_main_inner_forms_box {
+    max-width: 870px;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_forms .login_register_main_inner_forms_box .login_register_main_inner_forms_row .login_register_main_inner_forms_form {
+    max-width: 50%;
+    width: 100%;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_forms .login_register_main_inner_forms_box .login_register_main_inner_forms_row .login_register_main_inner_forms_form .login_register_main_inner_forms_form_cnt {
+    max-width: 350px;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_forms .login_register_main_inner_forms_box .login_register_main_inner_forms_row .login_register_main_inner_forms_form .login_register_main_inner_forms_form_cnt .form_name {
+    font-size: 23px;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_forms .login_register_main_inner_forms_box .login_register_main_inner_forms_row .login_register_main_inner_forms_form .login_register_main_inner_forms_form_cnt .form_set label {
+    font-size: 18px;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_forms .login_register_main_inner_forms_box .login_register_main_inner_forms_row .login_register_main_inner_forms_form .login_register_main_inner_forms_form_cnt .form_set input {
+    height: 45px;
+    font-size: 15px;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_forms .login_register_main_inner_forms_box .login_register_main_inner_forms_row .login_register_main_inner_forms_form .login_register_main_inner_forms_form_cnt button {
+    font-size: 16px;
+    height: 40px;
+    max-width: 90px;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_forms .login_register_main_inner_forms_box .login_register_main_inner_forms_row .form_L {
+    height: 500px;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_forms .login_register_main_inner_forms_box .login_register_main_inner_forms_row .form_R {
+    height: 400px;
+  }
+}
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .login_register_main .login_register_main_inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_top {
+    height: 400px;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_top .logo {
+    margin-bottom: 35px;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_top .logo .top_text {
+    font-size: 26px;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_top .logo .bottom_text {
+    font-size: 15px;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_top h1 {
+    font-size: 21px;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_top p {
+    font-size: 16px;
+    max-width: 450px;
+    padding-bottom: 10px;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_top a {
+    font-size: 16px;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_forms {
+    margin-top: 60px;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_forms .login_register_main_inner_forms_box {
+    max-width: 1000px;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_forms .login_register_main_inner_forms_box .login_register_main_inner_forms_row .login_register_main_inner_forms_form {
+    max-width: 50%;
+    width: 100%;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_forms .login_register_main_inner_forms_box .login_register_main_inner_forms_row .login_register_main_inner_forms_form .login_register_main_inner_forms_form_cnt {
+    max-width: 400px;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_forms .login_register_main_inner_forms_box .login_register_main_inner_forms_row .login_register_main_inner_forms_form .login_register_main_inner_forms_form_cnt .form_name {
+    font-size: 23px;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_forms .login_register_main_inner_forms_box .login_register_main_inner_forms_row .login_register_main_inner_forms_form .login_register_main_inner_forms_form_cnt .form_set label {
+    font-size: 18px;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_forms .login_register_main_inner_forms_box .login_register_main_inner_forms_row .login_register_main_inner_forms_form .login_register_main_inner_forms_form_cnt .form_set input {
+    height: 45px;
+    font-size: 15px;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_forms .login_register_main_inner_forms_box .login_register_main_inner_forms_row .login_register_main_inner_forms_form .login_register_main_inner_forms_form_cnt button {
+    font-size: 16px;
+    height: 40px;
+    max-width: 90px;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_forms .login_register_main_inner_forms_box .login_register_main_inner_forms_row .form_L {
+    height: 500px;
+  }
+  .login_register_main .login_register_main_inner .login_register_main_inner_forms .login_register_main_inner_forms_box .login_register_main_inner_forms_row .form_R {
+    height: 400px;
+  }
 }/*# sourceMappingURL=Login_Register.module.css.map */
