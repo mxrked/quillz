@@ -35,7 +35,7 @@ export default function Profile() {
   // Checking if user is not logged in, takes them back to home
   useEffect(() => {
     // Checking sessionStorage
-    if (sessionStorage.getItem("User Email")) {
+    if (sessionStorage.getItem("Logged In User")) {
       return;
     } else {
       router.push("/login_register");
